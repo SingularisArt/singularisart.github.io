@@ -4,9 +4,17 @@
         <link>https://singularisart.github.io/</link>
         <description>Hugo theme - LoveIt</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>dermdorm2@gmail.com (Hashem A. Damrah)</managingEditor>
-            <webMaster>dermdorm2@gmail.com (Hashem A. Damrah)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 &#43;0000</lastBuildDate>
+            <webMaster>dermdorm2@gmail.com (Hashem A. Damrah)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 18 Aug 2022 00:00:00 &#43;0000</lastBuildDate>
             <atom:link href="https://singularisart.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Note Taking with LaTeX: Series</title>
+    <link>https://singularisart.github.io/note-taking-with-latex-intro/</link>
+    <pubDate>Thu, 18 Aug 2022 00:00:00 &#43;0000</pubDate>
+    <author>Hashem A. Damrah</author>
+    <guid>https://singularisart.github.io/note-taking-with-latex-intro/</guid>
+    <description><![CDATA[I go over using LaTeX to create, use, and manage your citations. I also talk about how to use Zotero, a citation managing application.]]></description>
+</item>
+<item>
     <title>Note Taking with LaTeX: Part I (NeoVim)</title>
     <link>https://singularisart.github.io/note-taking-with-latex-part-1/</link>
     <pubDate>Sat, 01 Jan 2022 00:00:00 &#43;0000</pubDate>
