@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>school - Category - Hashem A. Damrah</title>
-        <link>https://singularisart.github.io/categories/school/</link>
-        <description>school - Category - Hashem A. Damrah</description>
+        <title>notes - Category - Hashem A. Damrah</title>
+        <link>https://singularisart.github.io/categories/notes/</link>
+        <description>notes - Category - Hashem A. Damrah</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>singularisartt@gmail.com (Hashem A. Damrah)</managingEditor>
-            <webMaster>singularisartt@gmail.com (Hashem A. Damrah)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://singularisart.github.io/categories/school/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>singularisartt@gmail.com (Hashem A. Damrah)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://singularisart.github.io/categories/notes/" rel="self" type="application/rss+xml" /><item>
     <title>Intro to Note-Taking with LaTeX</title>
     <link>https://singularisart.github.io/intro-to-note-taking-with-latex/</link>
     <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</pubDate>
