@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin font CSS files -->
+<link rel="stylesheet" href="{{ site.baseurl}}/assets/fonts/cm/Sans/cmun-sans.css">
+<link rel="stylesheet" href="{{ site.baseurl}}/assets/fonts/cm/Typewriter/cmun-typewriter.css">
+<!-- End font CSS files -->
+
+<link rel="stylesheet" href="{{ site.baseurl}}/assets/css/main.css">
+
+<body>
+
+<article class="markdown-body">
+
+{% include topnav.html %}
+
+{{ content }}
+</article>
+</body>
+
+</html>
