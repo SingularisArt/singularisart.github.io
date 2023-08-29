@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  html {
+    @apply bg-slate-600;
+    @apply text-white;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "singularisart.github.io",
+  "version": "1.0.0",
+  "description": "Source files for [my website](https://singularisart.github.io/) written in hugo with tailwindcss.",
+  "main": "index.js",
+  "scripts": {
+    "build-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css"
+  },
+  "keywords": [],
+  "author": "Hashem A. Damrah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SingularisArt/singularis.github.io/issues"
+  },
+  "homepage": "https://github.com/SingularisArt/singularis.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "typescript-language-server": "^3.3.2"
+  }
+}
