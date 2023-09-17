@@ -1,24 +1,32 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <title>{{ .Page.Title }} | SingularisArt</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{ $style := resources.Get "style.css" }}
+    {{ $style := resources.Get "css/style.css" }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+    <script>
+    if (!localStorage.getItem("theme") || localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("light")
+    }
+    </script>
   </head>
 
-  <body
-    class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-neutral-50 dark:bg-gray-900"
-  >
-    {{ block "main" . }} {{ end }}
+  <body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-neutral-50 dark:bg-gray-900">
+    {{ partial "header.html" . }}
+
+    <div class="pt-20"></div>
+
+    <div class="sm:px-8">
+      {{ block "main" . }} {{ end }}
+    </div>
   </body>
 </html>

@@ -1,0 +1,19 @@
+{{ $currentPage := . -}}
+
+<nav class="fixed z-50 top-0 w-full flex items-center justify-between px-4 py-4 sm:py-3 sm:px-8 text-header-text-light bg-neutral-200 dark:text-header-text-dark dark:bg-gray-800">
+  <div class="flex items-center px-1">
+    LOGO
+  </div>
+
+  <div class="flex items-center justify-center gap-5 px-1">
+    <a class="text-header-text-light dark:text-header-text-dark hover:underline {{ if eq $currentPage.Title "Home" }}italic text-gray-400 dark:text-gray-500{{ end }}" href="/">Home</a>
+    <a class="text-header-text-light dark:text-header-text-dark hover:underline {{ if eq $currentPage.Title "Content" }}italic text-gray-400 dark:text-gray-500{{ end }}" href="/content">Content</a>
+    <a class="text-header-text-light dark:text-header-text-dark hover:underline {{ if eq $currentPage.Title "Contact" }}italic text-gray-400 dark:text-gray-500{{ end }}" href="/contact">Contact</a>
+    <a class="text-header-text-light dark:text-header-text-dark hover:underline {{ if eq $currentPage.Title "About" }}italic text-gray-400 dark:text-gray-500{{ end }}" href="/about">About</a>
+    <a class="text-header-text-light dark:text-header-text-dark hover:underline {{ if eq $currentPage.Title "Notes" }}italic text-gray-400 dark:text-gray-500{{ end }}" href="/notes">Notes</a>
+  </div>
+
+  <div class="px-1">
+    {{ partial "search.html" . }}
+  </div>
+</nav>

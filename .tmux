@@ -19,6 +19,9 @@ tmux new-session -d -s "$SESSION_NAME"
 tmux rename-window -t "$SESSION_NAME" "Server"
 tmux send-keys -t "$SESSION_NAME" "clear; hugo server" Enter
 
+tmux split-window -h
+tmux send-keys -t "$SESSION_NAME" "clear; bun tailwindcss -i ./assets/main.css -o ./assets/style.css --watch" Enter
+
 tmux new-window -t "$SESSION_NAME"
 
 tmux rename-window -t "$SESSION_NAME" "Editor"
