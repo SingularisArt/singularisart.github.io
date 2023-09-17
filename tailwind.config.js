@@ -29,7 +29,7 @@ module.exports = {
         "sans": ["Inter", ...defaultTheme.fontFamily.sans],
       },
       typography: (theme) => ({
-        ejmastnak: {
+        singularisart: {
           css: {
             "--tw-prose-body": theme("colors.gray[700]"),
             "--tw-prose-headings": theme("colors.gray[900]"),

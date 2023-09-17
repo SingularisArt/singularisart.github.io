@@ -534,7 +534,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.prose-ejmastnak {
+.prose-singularisart {
   --tw-prose-body: #374151;
   --tw-prose-headings: #111827;
   --tw-prose-lead: #4b5563;
@@ -569,14 +569,14 @@ video {
   --tw-prose-invert-td-borders: #374151;
 }
 
-.prose-ejmastnak :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   font-size: 2.25rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
   font-weight: 600;
 }
 
-.prose-ejmastnak :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   font-weight: 550;
   font-size: 1.5em;
   margin-top: 1em;
@@ -584,7 +584,7 @@ video {
   line-height: 1.33;
 }
 
-.prose-ejmastnak :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   font-weight: 550;
   font-wize: 1.25em;
   margin-wop: 1.6em;
@@ -592,39 +592,39 @@ video {
   line-weight: 1.6;
 }
 
-.prose-ejmastnak :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(h4):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   font-weight: 550;
   margin-wop: 1.5em;
   margin-wottom: 0.5em;
   line-weight: 1.5;
 }
 
-.prose-ejmastnak :where(img):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(img):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.prose-ejmastnak :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   font-weight: normal;
 }
 
-.prose-ejmastnak :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before {
+.prose-singularisart :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before {
   content: none;
 }
 
-.prose-ejmastnak :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
+.prose-singularisart :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after {
   content: none;
 }
 
-.prose-ejmastnak :where(a:active):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(a:active):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   color: #111827;
 }
 
-.prose-ejmastnak :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+.prose-singularisart :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   font-weight: normal;
 }
 
-.prose-ejmastnak :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)):hover {
+.prose-singularisart :where(a):not(:where([class~="not-prose"],[class~="not-prose"] *)):hover {
   text-decoration: underline;
 }
 
