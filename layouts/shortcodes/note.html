@@ -1,7 +1,7 @@
 <div class="flex justify-center gap-5 flex-row">
   <div>
     <div class="flex justify-between">
-      <div>{{ .Get "title" }}</div>
+      <div>{{ .Get "title" }}, (<span class="text-gray-400">{{ .Get "note" }}</span>)</div>
       <div>Year {{ .Get "year" }}: {{ .Get "term" }}</div>
     </div>
     <table class="border-separate border-spacing-3 border border-slate-500 mb-5">

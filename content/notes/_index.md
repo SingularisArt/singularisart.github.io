@@ -1,6 +1,7 @@
 ---
 title: "Notes"
 date: 2023-08-13T07:29:02-07:00
+draft: false
 ---
 
 # Notes
@@ -16,67 +17,43 @@ lectures occur. You can view all my courses [here]().
 {{< title "High School" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
 </div>
 
 {{< title "Undergrad" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
 </div>
 
 {{< title "Graduate" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
 </div>
 
 {{< title "Doctorate" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3, (2023, F. Last)" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
 </div>

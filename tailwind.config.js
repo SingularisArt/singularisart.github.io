@@ -1,23 +1,15 @@
-const defaultTheme = require("tailwindcss/defaultTheme")
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   darkMode: "class",
-  enabled: process.env.NODE_ENV === 'production',
   content: [
     "./content/**/*.md",
     "./layouts/**/*.html",
     "./assets/js/*.js",
   ],
   theme: {
-    screens: {
-      "xxs": "350px",
-      "xs": "475px",
-      ...defaultTheme.screens,
-    },
     extend: {
       colors: {
-        "header-text-light": "#000000",
-        "header-text-dark": "#FFFFFF",
         "search-bar-border-light": "#CCCCCC",
         "search-bar-border-dark": "#333333",
       },
@@ -80,16 +72,16 @@ module.exports = {
             },
             h3: {
               fontWeight: "550",
-              fontWize: "1.25em",
-              marginWop: "1.6em",
-              marginWottom: "0.6em",
-              lineWeight: "1.6",
+              fontSize: "1.25em",
+              marginTop: "1.6em",
+              marginBottom: "0.6em",
+              lineHeight: "1.6",
             },
             h4: {
               fontWeight: "550",
-              marginWop: "1.5em",
-              marginWottom: "0.5em",
-              lineWeight: "1.5",
+              marginTop: "1.5em",
+              marginBottom: "0.5em",
+              lineHeight: "1.5",
             },
             img: {
               marginTop: "0.5rem",
@@ -104,11 +96,9 @@ module.exports = {
             "code::after": {
               content: "none",
             },
-            "a:active": {
-              color: theme("colors.gray.900"),
-            },
             a: {
               fontWeight: "normal",
+              color: "var(--tw-prose-links)",
               "&:hover": {
                 textDecoration: "underline",
               },
@@ -120,5 +110,5 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
-  ]
-}
+  ],
+};

@@ -4,7 +4,7 @@ node_modules
 .hugo_build.lock
 
 # Result of compiling Tailwind CSS
-assets/css/main.css
+assets/css/style.css
 
 TODO.md
 .root

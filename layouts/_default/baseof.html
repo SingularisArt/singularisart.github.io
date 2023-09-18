@@ -1,3 +1,11 @@
+{{ $style := resources.Get "css/style.css" }}
+
+{{ $disqus := resources.Get "js/disqus.js" }}
+{{ $header := resources.Get "js/header.js" }}
+{{ $katex := resources.Get "js/katex.js" }}
+{{ $search := resources.Get "js/search.js" }}
+{{ $theme := resources.Get "js/theme.js" }}
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,19 +16,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{ $style := resources.Get "css/style.css" }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
 
-    <script>
-    if (!localStorage.getItem("theme") || localStorage.getItem("theme") === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("light")
-    }
-    </script>
+    <script defer type="text/javascript" src="{{ $disqus.Permalink }}"></script>
+    <script defer type="text/javascript" src="{{ $header.Permalink }}"></script>
+    <script defer type="text/javascript" src="{{ $katex.Permalink }}"></script>
+    <script defer type="text/javascript" src="{{ $search.Permalink }}"></script>
+    <script defer type="text/javascript" src="{{ $theme.Permalink }}"></script>
   </head>
 
-  <body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-neutral-50 dark:bg-gray-900">
+  <body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-[#fafafa] dark:bg-gray-900">
     {{ partial "header.html" . }}
 
     <div class="pt-20"></div>
