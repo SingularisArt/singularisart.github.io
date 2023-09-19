@@ -2,10 +2,11 @@
 title: "Prerequisites for Writing LaTeX"
 date:
 draft: false
+comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/intro"
-nextFile: "/tutorials/latex-notes/ultisnips"
-introFile: "/tutorials/latex-notes/intro"
+prevFile: "/tutorials/latex-notes/post-00"
+nextFile: "/tutorials/latex-notes/post-02"
+introFile: "/tutorials/latex-notes/post-00"
 ---
 
 {{< header "Prerequisites for Writing LaTeX" >}}

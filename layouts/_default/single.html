@@ -1,6 +1,5 @@
 {{ define "main" }}
 {{- $toc := .Params.toc -}}
-{{- $license := .Params.license -}}
 
 {{- if eq $toc true -}}
   <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 grid grid-rows-[1,100%] md:grid-cols-[13rem_auto]">
@@ -18,9 +17,6 @@
   </div>
 {{- end -}}
 
-{{- if eq $license false -}}
-{{ else }}
-  {{ partial "license.html" . }}
-{{- end -}}
+{{ partial "footer.html" . }}
 
 {{ end }}

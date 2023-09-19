@@ -3,9 +3,10 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 toc: true
-prevFile: ""
-nextFile: ""
-introFile: ""
+comments: true
+prevFile: "/{{ .File.Dir }}"
+nextFile: "/{{ .File.Dir }}"
+introFile: "/{{ .File.Dir }}post-00"
 ---
 
 {{< header "{{ replace .Name "-" " " | title }}" >}}

@@ -1,0 +1,11 @@
+{{- $license := .Params.license -}}
+{{- if eq $license false -}}
+{{ else }}
+  {{ partial "license.html" . }}
+{{- end -}}
+
+{{- $comments := .Params.comments -}}
+{{- if eq $comments false -}}
+{{ else }}
+  {{ partial "comment.html" . }}
+{{- end -}}

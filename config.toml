@@ -1,6 +1,7 @@
 baseURL = "https://singularisart.github.io"
 languageCode = "en-us"
 title = "SingularisArt"
+disqusShortname = "singularisart-github-io"
 
 [markup]
   [markup.highlight]

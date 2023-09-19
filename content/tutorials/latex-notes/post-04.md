@@ -2,10 +2,11 @@
 title: "More Advanced Vimtex Features"
 date:
 draft: false
+comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/vimtex-basics"
-nextFile: "/tutorials/latex-notes/tmux"
-introFile: "/tutorials/latex-notes/intro"
+prevFile: "/tutorials/latex-notes/post-03"
+nextFile: "/tutorials/latex-notes/post-05"
+introFile: "/tutorials/latex-notes/post-00"
 ---
 
 {{< header "More Advanced Vimtex Features" >}}

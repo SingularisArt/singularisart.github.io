@@ -2,10 +2,11 @@
 title: "Using Tmux to Enhance your Workflow"
 date:
 draft: false
+comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/vimtex-advanced"
-nextFile: "/tutorials/latex-notes/manage-notes"
-introFile: "/tutorials/latex-notes/intro"
+prevFile: "/tutorials/latex-notes/post-04"
+nextFile: "/tutorials/latex-notes/post-06"
+introFile: "/tutorials/latex-notes/post-00"
 ---
 
 {{< header "Using Tmux to Enhance your Workflow" >}}

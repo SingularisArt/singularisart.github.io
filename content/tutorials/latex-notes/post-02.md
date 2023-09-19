@@ -2,10 +2,11 @@
 title: "Setting up UltiSnips with Neovim"
 date:
 draft: false
+comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/prerequisites"
-nextFile: "/tutorials/latex-notes/vimtex-basics"
-introFile: "/tutorials/latex-notes/intro"
+prevFile: "/tutorials/latex-notes/post-01"
+nextFile: "/tutorials/latex-notes/post-03"
+introFile: "/tutorials/latex-notes/post-00"
 ---
 
 {{< header "Setting up UltiSnips with Neovim" >}}
