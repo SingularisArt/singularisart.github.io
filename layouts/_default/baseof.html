@@ -7,31 +7,43 @@
 {{ $theme := resources.Get "js/theme.js" }}
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <title>{{ .Page.Title }} | SingularisArt</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Page.Title }} | SingularisArt</title>
 
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script defer type="text/javascript" src="{{ $disqus.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $header.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $katex.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $search.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $theme.Permalink }}"></script>
-  </head>
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
+</head>
 
-  <body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-[#fafafa] dark:bg-gray-900">
-    {{ partial "header.html" . }}
+<body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-[#fafafa] dark:bg-gray-900">
+  {{ partial "header.html" . }}
 
-    <div class="pt-20"></div>
+  <div class="pt-20"></div>
 
-    <div class="sm:px-8">
-      {{ block "main" . }} {{ end }}
-    </div>
-  </body>
+  <div class="sm:px-8">
+    {{ block "main" . }} {{ end }}
+  </div>
+
+  <script defer type="text/javascript" src="{{ $disqus.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $header.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $katex.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $search.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $theme.Permalink }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.js"></script>
+  <script type="text/javascript">
+    tocbot.init({
+      tocSelector: ".toc",
+      contentSelector: ".post",
+      headingSelector: "h2, h3, h4",
+      collapseDepth: 4
+    });
+  </script>
+</body>
+
 </html>

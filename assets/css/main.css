@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tocbot/src/scss/tocbot";
 
 body {
   -ms-overflow-style: none;
@@ -23,4 +24,35 @@ dialog::backdrop {
   #main-nav {
     display: none;
   }
+}
+
+.toc-dark {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.toc-dark a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.toc-dark a:hover {
+  text-decoration: underline;
+}
+
+/* Light Theme */
+.toc-light {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.toc-light a {
+  color: #333;
+  text-decoration: none;
+}
+
+.toc-light a:hover {
+  text-decoration: underline;
 }

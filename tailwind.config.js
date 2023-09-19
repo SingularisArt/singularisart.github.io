@@ -1,5 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
   darkMode: "class",
   content: [
@@ -12,13 +10,6 @@ module.exports = {
       colors: {
         "search-bar-border-light": "#CCCCCC",
         "search-bar-border-dark": "#333333",
-      },
-      spacing: {
-        "84": "21rem",
-        "85": "23rem",
-      },
-      fontFamily: {
-        "sans": ["Inter", ...defaultTheme.fontFamily.sans],
       },
       typography: (theme) => ({
         singularisart: {

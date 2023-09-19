@@ -4,3 +4,9 @@ title = "SingularisArt"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = true
+    startLevel = 2

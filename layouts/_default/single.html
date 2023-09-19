@@ -1,19 +1,20 @@
 {{ define "main" }}
-<nav class="prose-singularisart dark:prose-invert flex px-4 py-4 sm:py-3 sm:px-8">
-  <div class="w-84 fixed">
-    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
-    Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
-    Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-    Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-    occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-    officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in
-    Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non
-    excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut
-    ea consectetur et est culpa et culpa duis.
+{{- $toc := .Params.toc -}}
+
+{{- if eq $toc true -}}
+  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 grid grid-rows-[10rem,auto] md:grid-cols-[13rem_auto]">
+    <div class="md:fixed">{{ partial "toc.html" . }}</div>
+    <div></div>
+    <div class="post md:flex-1 md:pl-[10px]">
+      {{ .Content }}
+    </div>
   </div>
-  <div class="flex-1 ml-85">
-    {{ .Content }}
+{{- else -}}
+  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8">
+    <div>
+      <div class="post">{{ .Content }}</div>
+    </div>
   </div>
-</div>
+{{- end -}}
+
 {{ end }}
