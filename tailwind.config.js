@@ -6,6 +6,9 @@ module.exports = {
     "./assets/js/*.js",
   ],
   theme: {
+    fontSize: {
+      "h3": "1.25em",
+    },
     extend: {
       colors: {
         "search-bar-border-light": "#CCCCCC",

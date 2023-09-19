@@ -1,9 +1,10 @@
 {{ define "main" }}
 {{- $toc := .Params.toc -}}
+{{- $license := .Params.license -}}
 
 {{- if eq $toc true -}}
-  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 grid grid-rows-[10rem,auto] md:grid-cols-[13rem_auto]">
-    <div class="md:fixed">{{ partial "toc.html" . }}</div>
+  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 grid grid-rows-[1,100%] md:grid-cols-[13rem_auto]">
+    <div class="lg:block md:fixed md:block sm:hidden">{{ partial "toc.html" . }}</div>
     <div></div>
     <div class="post md:flex-1 md:pl-[10px]">
       {{ .Content }}
@@ -15,6 +16,11 @@
       <div class="post">{{ .Content }}</div>
     </div>
   </div>
+{{- end -}}
+
+{{- if eq $license false -}}
+{{ else }}
+  {{ partial "license.html" . }}
 {{- end -}}
 
 {{ end }}

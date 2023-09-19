@@ -2,10 +2,13 @@ baseURL = "https://singularisart.github.io"
 languageCode = "en-us"
 title = "SingularisArt"
 
-[markup.goldmark.renderer]
-  unsafe = true
-
 [markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
   [markup.tableOfContents]
     endLevel = 4
     ordered = true
