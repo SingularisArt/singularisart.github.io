@@ -4,9 +4,13 @@ date:
 draft: false
 comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/post-04"
-nextFile: "/tutorials/latex-notes/post-06"
-introFile: "/tutorials/latex-notes/post-00"
+katex: false
+markup: "mmark"
+prevFile: "post-04"
+nextFile: "post-06"
+introFile: "post-00"
+categories: []
+tags: []
 ---
 
 {{< header "Using Tmux to Enhance your Workflow" >}}

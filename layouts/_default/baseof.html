@@ -8,19 +8,18 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>{{ .Page.Title }} | SingularisArt</title>
 
-  <title>{{ .Page.Title }} | SingularisArt</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
-</head>
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
+  </head>
   <body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-[#fafafa] dark:bg-gray-900">
     {{ partial "header.html" . }}
 
@@ -29,6 +28,8 @@
     <div class="sm:px-8">
       {{ block "main" . }} {{ end }}
     </div>
+
+    {{ if .Params.katex }}{{ partial "katex.html" . }}{{ end }}
 
     <script id="dsq-count-scr" src="//singularisart-github-io.disqus.com/count.js" async></script>
     <script defer type="text/javascript" src="{{ $disqus.Permalink }}"></script>

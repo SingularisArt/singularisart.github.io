@@ -4,11 +4,13 @@ date: {{ .Date }}
 draft: true
 toc: true
 comments: true
-prevFile: "/{{ .File.Dir }}"
-nextFile: "/{{ .File.Dir }}"
-introFile: "/{{ .File.Dir }}post-00"
-tags: []
+katex: true
+markup: "mmark"
+prevFile: ""
+nextFile: ""
+introFile: "post-00"
 categories: []
+tags: []
 ---
 
 {{< header "{{ replace .Name "-" " " | title }}" >}}

@@ -4,9 +4,13 @@ date:
 draft: false
 comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/post-02"
-nextFile: "/tutorials/latex-notes/post-04"
-introFile: "/tutorials/latex-notes/post-00"
+katex: false
+markup: "mmark"
+prevFile: "post-02"
+nextFile: "post-04"
+introFile: "post-00"
+categories: []
+tags: []
 ---
 
 {{< header "An Introduction to Vimtex" >}}

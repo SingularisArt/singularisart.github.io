@@ -4,9 +4,13 @@ date:
 draft: false
 comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/post-00"
-nextFile: "/tutorials/latex-notes/post-02"
-introFile: "/tutorials/latex-notes/post-00"
+katex: false
+markup: "mmark"
+prevFile: "post-00"
+nextFile: "post-02"
+introFile: "post-00"
+categories: []
+tags: []
 ---
 
 {{< header "Prerequisites for Writing LaTeX" >}}

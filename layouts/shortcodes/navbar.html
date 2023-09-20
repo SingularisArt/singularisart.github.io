@@ -1,17 +1,20 @@
+{{ $fileDir := (path.Join (path.Dir .Page.File.Path)) }}
+
+
 <header class="text-center mx-auto mb-8 bg-blue-50 dark:bg-gray-800 rounded-xl py-2 not-prose border border-gray-200 dark:border-gray-700">
   <ul class="flex list-none items-center text-sky-600 dark:text-sky-500 justify-around px-2 overflow-auto">
     <li>
-      <a class="hover:underline whitespace-nowrap" href="{{ .Page.Params.prevFile }}">
+      <a class="hover:underline whitespace-nowrap" href="/{{ $fileDir }}/{{ .Page.Params.prevFile }}">
         « Previous
       </a>
     </li>
     <li>
-      <a class="hover:underline" href="{{ .Page.Params.introFile }}">
+      <a class="hover:underline" href="/{{ $fileDir }}/{{ .Page.Params.introFile }}">
         Series homepage
       </a>
     </li>
     <li>
-      <a class="hover:underline whitespace-nowrap" href="{{ .Page.Params.nextFile }}">
+      <a class="hover:underline whitespace-nowrap" href="/{{ $fileDir }}/{{ .Page.Params.nextFile }}">
         Next »
       </a>
     </li>

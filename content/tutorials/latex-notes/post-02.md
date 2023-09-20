@@ -4,9 +4,13 @@ date:
 draft: false
 comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/post-01"
-nextFile: "/tutorials/latex-notes/post-03"
-introFile: "/tutorials/latex-notes/post-00"
+katex: false
+markup: "mmark"
+prevFile: "post-01"
+nextFile: "post-03"
+introFile: "post-00"
+categories: []
+tags: []
 ---
 
 {{< header "Setting up UltiSnips with Neovim" >}}

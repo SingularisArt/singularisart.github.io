@@ -4,9 +4,13 @@ date:
 draft: false
 comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/post-06"
-nextFile: "/tutorials/latex-notes/post-08"
-introFile: "/tutorials/latex-notes/post-00"
+katex: false
+markup: "mmark"
+prevFile: "post-06"
+nextFile: "post-08"
+introFile: "post-00"
+categories: []
+tags: []
 ---
 
 {{< header "How I Draw my Figures" >}}

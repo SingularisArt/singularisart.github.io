@@ -4,9 +4,13 @@ date:
 draft: false
 comments: true
 toc: true
-prevFile: "/tutorials/latex-notes/post-05"
-nextFile: "/tutorials/latex-notes/post-07"
-introFile: "/tutorials/latex-notes/post-00"
+katex: false
+markup: "mmark"
+prevFile: "post-05"
+nextFile: "post-07"
+introFile: "post-00"
+categories: []
+tags: []
 ---
 
 {{< header "How I Manage my Notes" >}}

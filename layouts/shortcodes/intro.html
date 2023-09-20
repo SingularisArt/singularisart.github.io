@@ -1,6 +1,8 @@
+{{ $fileDir := (path.Join (path.Dir .Page.File.Path)) }}
+
 <div class="text-center mx-auto text-gray-500 dark:text-gray-400">
   <p>(This is part {{ .Get "part" }} in a 
-    <a href="{{ .Page.Params.introFile }}">{{ .Get "length" }} series</a>
+    <a href="/{{ $fileDir }}/{{ .Page.Params.introFile }}">{{ .Get "length" }} series</a>
     on {{ .Get "topic" }}.)
   </p>
 </div>

@@ -56,3 +56,16 @@ dialog::backdrop {
 .toc-light a:hover {
   text-decoration: underline;
 }
+
+.icon {
+  font-size: 0.85rem;
+  position: absolute;
+  top: .6rem;
+  left: .4rem;
+}
+
+.details-icon {
+  position: absolute;
+  top: .6rem;
+  right: .3rem;
+}
