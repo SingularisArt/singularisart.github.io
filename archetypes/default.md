@@ -7,6 +7,8 @@ comments: true
 prevFile: "/{{ .File.Dir }}"
 nextFile: "/{{ .File.Dir }}"
 introFile: "/{{ .File.Dir }}post-00"
+tags: []
+categories: []
 ---
 
 {{< header "{{ replace .Name "-" " " | title }}" >}}
@@ -15,3 +17,4 @@ introFile: "/{{ .File.Dir }}post-00"
 {{< toc >}}
 
 {{< navbar >}}
+{{< begin "/{{ .File.Dir }}post-00" >}}

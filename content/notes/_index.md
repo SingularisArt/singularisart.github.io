@@ -8,24 +8,15 @@ draft: false
 
 Below are all the notes I've taken since high school. None of this is official.
 In addition, I've included stripped down versions of the notes, such as
-definition only. They are [script]() generated. I've also included the link to
-their source code, if available. Note that the lecture notes are not reliable
-indicators for what was lectured in my year, or what will be lectured in your
-year, as I tend to change, add and remove contents from the notes after the
-lectures occur. You can view all my courses [here]().
+definition only. They are
+[script](https://github.com/SingularisArt/school-setup/) generated. I've also
+included the link to their source code, if available. Note that the lecture
+notes are not reliable indicators for what was lectured in my year, or what will
+be lectured in your year, as I tend to change, add and remove contents from the
+notes after the lectures occur. You can view all my courses
+[here](https://github.com/SingularisArt/LaTeX/tree/master/lecture-notes).
 
-{{< title "High School" >}}
-
-<div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
-</div>
-
-{{< title "Undergrad" >}}
+{{< title "High School Diploma/Associates" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
   {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
@@ -36,7 +27,7 @@ lectures occur. You can view all my courses [here]().
   {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
 </div>
 
-{{< title "Graduate" >}}
+{{< title "Bachelor" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
   {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
@@ -47,7 +38,18 @@ lectures occur. You can view all my courses [here]().
   {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
 </div>
 
-{{< title "Doctorate" >}}
+{{< title "Master" >}}
+
+<div class="flex justify-center flex-row gap-5 flex-wrap">
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}
+</div>
+
+{{< title "PhD" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
   {{< note title="Calculus 3" note="2023, F. Last" term="Spring" year="1" html="" pdf="" def="" thm="" prf="" tex="" >}}

@@ -14,3 +14,7 @@ disqusShortname = "singularisart-github-io"
     endLevel = 4
     ordered = true
     startLevel = 2
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

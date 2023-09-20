@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="prose-singularisart dark:prose-invert px-4 py-4 sm:py-3 sm:px-8">
+  <div class="grid grid-cols-[50%_50%]">
+    <div>
+      <h1>Categories</h1>
+
+      {{- range $.Site.Taxonomies.categories.ByCount -}}
+        &nbsp;<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <sup>{{ .Count }}</sup></a>&nbsp;
+      {{- end -}}
+    </div>
+
+    <div>
+      <h1>Tags</h1>
+
+      {{- range $.Site.Taxonomies.tags.ByCount -}}
+        &nbsp;<a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} <sup>{{ .Count }}</sup></a>&nbsp;
+      {{- end -}}
+    </div>
+  </div>
+</div>
+
+{{- end -}}

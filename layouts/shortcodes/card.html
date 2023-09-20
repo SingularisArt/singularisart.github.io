@@ -1,0 +1,37 @@
+{{- $categories := .Get "categories" -}}
+{{- $splitCategories := split $categories "," -}}
+{{- $img := .Get "img" }}
+
+{{- $tags := .Get "tags" -}}
+{{- $splitTags := split $tags "," -}}
+
+<div class="shadow-lg rounded-lg overflow-hidden">
+  <a href="{{ .Get "link" }}" class="hover:no-underline">
+    <img src="{{ $img }}" alt="Blog Post Image" class="w-full h-48 object-fit object-center">
+  </a>
+
+  <a href="{{ .Get "link" }}" class="hover:no-underline">
+    <div class="p-2 bg-blue-50 dark:bg-gray-800">
+      <h2 class="mb-2">{{ .Get "title" }}</h2>
+
+      <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">{{ .Get "summary" }}</p>
+
+      <div class="flex flex-wrap gap-1">
+        {{ with $categories }}
+          {{ range $splitCategories }}
+            <a href="/categories/{{ . }}">
+              <span class="px-2 py-2 inline-block font-semibold">#{{ . }}</span>
+            </a>
+          {{ end }}
+        {{ end }}
+        {{ with $tags }}
+          {{ range $splitTags }}
+            <a href="/tags/{{ . }}">
+              <span class="px-2 py-2 inline-block font-semibold">#{{ . }}</span>
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </a>
+</div>
