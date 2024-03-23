@@ -1,0 +1,8 @@
+<div>
+  <span style="font-family: sans-serif; font-weight: bold;">
+    {{ .Params.env }} {{ if .Get "name" }} <span style="">({{ .Get "name" }})</span> {{ end }}
+  </span>
+  <span style="font-family: sans-serif; font-weight: normal; font-style: italic">
+    {{ .Inner }}
+  </span>
+</div>

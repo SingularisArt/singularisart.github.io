@@ -86,3 +86,10 @@ ul {
   height: 10px;
   background-color: var(--solution);
 }
+
+.prf-qed {
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  background-color: var(--proof);
+}

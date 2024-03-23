@@ -5,7 +5,7 @@
     extensions: ["tex2jax.js", "colors.js"],
     jax: ["input/TeX", "output/HTML-CSS"],
     tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      inlineMath: [ ["\\(","\\)"], ['$','$'] ],
       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
       processEscapes: true
     },
@@ -16,7 +16,10 @@
 <div>
   \(
     \require{physics}
-    \require{colorv2}
+    \require{color}
+
+    \newcommand{\colorboxed}[3]{\colorbox{#2}{$\displaystyle #3$}}
+    \newcommand{\empheq}[1]{\bbox[25px, border: 2px solid var(--proof)]{#1}}
 
     \newcommand{\blu}[1]{\phantom{#1}}
 

@@ -1003,6 +1003,10 @@ video {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .ordinal {
   --tw-ordinal: ordinal;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
@@ -1147,6 +1151,13 @@ ul {
   width: 30px;
   height: 10px;
   background-color: var(--solution);
+}
+
+.prf-qed {
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  background-color: var(--proof);
 }
 
 :is(.dark .dark\:prose-invert) {

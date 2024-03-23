@@ -1,0 +1,8 @@
+<div style="border-left: 2px solid var(--remark);">
+  <span style="margin-left: 10px; font-family: sans-serif; font-weight: bold; color: var(--proof);">
+    Remark {{ if .Get "name" }} <span style="">({{ .Get "name" }})</span> {{ end }}
+  </span>
+  <span style="font-family: sans-serif; font-weight: normal; font-style: italic">
+    {{ .Inner }}
+  </span>
+</div>
