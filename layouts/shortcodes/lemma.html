@@ -1,0 +1,11 @@
+<div style="border: 2px solid var(--lemma); padding: 10px; margin-bottom: 20px;">
+  <div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <div style="border: 2px solid var(--lemma); padding: 5px; margin-right: 10px;">{{ .Params.counter }}</div>
+    <div style="font-family: sans-serif; font-weight: bold; color: var(--lemma);">
+      Lemma {{ if .Get "name" }} <span style="">({{ .Get "name" }})</span> {{ end }}
+    </div>
+  </div>
+  <div style="font-family: sans-serif; font-weight: normal;">
+    {{ .Inner }}
+  </div>
+</div>

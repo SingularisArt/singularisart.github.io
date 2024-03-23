@@ -19,18 +19,13 @@ notes after the lectures occur. You can view all my courses
 {{< title "High School Diploma/Associates" >}}
 
 <div class="flex justify-center flex-row gap-5 flex-wrap">
-  {{< note title="Calculus 1" note="2022, R. Kouzes" term="Fall" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Force, Motion, and Energy" note="2022, X. Morrow" term="Fall" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="The Solar System" note="2022, R. Lee" term="Winter" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Calculus 1" note="2022, R. Kouzes" term="Fall" year="2022" html="/notes/mth-251" pdf="" def="" qst="" thm="" tex="" >}}
+  {{< note title="Stats 1" note="2022, V, Emiliano" term="Fall" year="2022" html="/notes/" pdf="" def="" qst="" thm="" tex="" >}}
   {{< note title="Calculus 2" note="2022, R. Kouzes" term="Winter" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Intro to Psyc: Part 1" note="2022, T. Snyder" term="Winter" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Stats 2" note="2022, G, Greta" term="Winter" year="2022" html="/notes/" pdf="" def="" qst="" thm="" tex="" >}}
   {{< note title="Calculus 3" note="2022, R. Kouzes" term="Spring" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Intro to Psyc: Part 2" note="2022, K. Kelley" term="Spring" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Galaxies and Cosmology" note="2022, R. Lee" term="Spring" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Intro to Behav Neuroscience" note="2023, D. Cozzoli" term="Fall" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Linear Algebra" note="2023, N. Kit" term="Fall" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Vector Calculus 1" note="2023, C. Yao" term="Winter" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Introduction to Sociology" note="2023, F. Last" term="Winter" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Vector Calculus 2" note="2023, F. Last" term="Spring" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Differential Equations" note="2023, F. Last" term="Spring" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
 </div>

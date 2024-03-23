@@ -2,7 +2,7 @@
 
 {{ $disqus := resources.Get "js/disqus.js" }}
 {{ $header := resources.Get "js/header.js" }}
-{{ $katex := resources.Get "js/katex.js" }}
+{{ $latex := resources.Get "js/latex.js" }}
 {{ $search := resources.Get "js/search.js" }}
 {{ $theme := resources.Get "js/theme.js" }}
 
@@ -19,6 +19,9 @@
 
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
+
+    {{ if .Params.latex }}{{ partial "mathjax.html" . }}{{ end }}
+    {{ if .Params.tikz }}{{ partial "tikz.html" . }}{{ end }}
   </head>
   <body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-[#fafafa] dark:bg-gray-900">
     {{ partial "header.html" . }}
@@ -29,12 +32,10 @@
       {{ block "main" . }} {{ end }}
     </div>
 
-    {{ if .Params.katex }}{{ partial "katex.html" . }}{{ end }}
-
     <script id="dsq-count-scr" src="//singularisart-github-io.disqus.com/count.js" async></script>
     <script defer type="text/javascript" src="{{ $disqus.Permalink }}"></script>
     <script defer type="text/javascript" src="{{ $header.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $katex.Permalink }}"></script>
+    <script defer type="text/javascript" src="{{ $latex.Permalink }}"></script>
     <script defer type="text/javascript" src="{{ $search.Permalink }}"></script>
     <script defer type="text/javascript" src="{{ $theme.Permalink }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.js"></script>

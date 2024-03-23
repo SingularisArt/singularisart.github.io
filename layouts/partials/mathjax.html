@@ -1,0 +1,137 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js", "colors.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { fonts: ["TeX"] }
+  });
+</script>
+
+<div>
+  \(
+    \require{physics}
+    \require{colorv2}
+
+    \newcommand{\blu}[1]{\phantom{#1}}
+
+    % For diagonal strikeout in red
+    \newcommand{\rcancel}[1]{\renewcommand\CancelColor{\color{red}}\cancel{#1}}
+
+    % Helpful text in math
+    \newcommand\echelon{\underrightarrow{\textrm{ echelon form }}}
+    \newcommand\rref{\underrightarrow{\textrm{ rref }}}
+    \newcommand\pick[1]{\xrightarrow[#1]{\textrm{ pick }}}
+    \newcommand\generalsol{\xrightarrow[\textrm{solution}]{\textrm{ general }}}
+    \newcommand\ngeneralsol{\parbox{4em}{general \\ solution}\textrm{:}}
+    \renewcommand\and{\text{and}}
+    \newcommand\aand{\quad\text{and}\quad}
+    \newcommand\adj{\text{adj}}
+    \newcommand\qtq[1]{\quad\textrm{#1}\quad}
+    \newcommand\oor{\quad\text{or}\quad}
+    \newcommand\Col{\textrm{Col}}
+    \newcommand\Nul{\textrm{Null}}
+    \newcommand\Row{\textrm{Row}}
+    \newcommand\ran{\textrm{rank}}
+    \newcommand\dist{\text{dist}}
+    \newcommand\sz{\stackrel{\textrm{set}}{=}}
+    \newcommand\ce{\overset{\checkmark}{=}}
+    \newcommand\proj{\text{proj}}
+    \newcommand\comp{\text{comp}}
+    \newcommand{\geogebra}{\textsf{GeoGebra}}
+
+    % Vectors
+    \renewcommand\a{\mathbf{a}}
+    \renewcommand\b{\mathbf{b}}
+    \renewcommand\c{\mathbf{c}}
+    \renewcommand\d{\mathbf{d}}
+    \newcommand\e{\mathbf{e}}
+    \newcommand\f{\mathbf{f}}
+    \newcommand\g{\mathbf{g}}
+    \newcommand\n{\mathbf{n}}
+    \newcommand\p{\mathbf{p}}
+
+    \renewcommand\P{^{\prime}}
+
+    \newcommand\RR{\mathbf{R}}
+    \newcommand\FF{\mathbf{F}}
+
+    \renewcommand\r{\mathbf{r}}
+    \newcommand\rr{\mathbf{r}^{\prime}}
+    \newcommand\rrr{\mathbf{r}^{\prime\prime}}
+
+    \newcommand\Ta{\mathbf{T}}
+    \newcommand\Taa{\mathbf{T}^{}}
+    \newcommand\N{\mathbf{N}}
+
+    \renewcommand\u{\mathbf{u}}
+    \newcommand\uu{\mathbf{u}^{\prime}}
+    \newcommand\uuu{\mathbf{u}^{\prime\prime}}
+
+    \renewcommand\v{\mathbf{v}}
+    \newcommand\vv{\mathbf{v}^{\prime}}
+    \newcommand\vvv{\mathbf{v}^{\prime\prime}}
+
+    \newcommand\w{\mathbf{w}}
+    \newcommand\x{\mathbf{x}}
+    \newcommand\y{\mathbf{y}}
+    \newcommand\z{\mathbf{z}}
+
+    \newcommand\zero{\mathbf{0}}
+    \newcommand\T{^{\top}}
+    \newcommand\I{^{-1}}
+
+    % Hat vectors
+    \newcommand\ah{\hat{a}}
+    \newcommand\bh{\hat{b}}
+    \newcommand\ch{\hat{c}}
+    \renewcommand\dh{\hat{d}}
+    \newcommand\eh{\hat{e}}
+    \newcommand\ph{\hat{p}}
+    \newcommand\uh{\hat{u}}
+    \newcommand\vh{\hat{v}}
+    \newcommand\wh{\hat{w}}
+    \newcommand\xh{\hat{x}}
+    \newcommand\yh{\hat{y}}
+    \newcommand\zh{\hat{z}}
+
+    % Unit vectors
+    \newcommand\ui{\mathbf{i}}
+    \newcommand\uj{\mathbf{j}}
+    \newcommand\uk{\mathbf{k}}
+
+    % Subspaces
+    \newcommand\B{\mathcal{B}}
+    \newcommand\CC{\mathbb{C}}
+    \newcommand\C{\mathcal{C}}
+    \newcommand\D{\mathcal{D}}
+    \newcommand\E{\mathcal{E}}
+    \newcommand\F{\mathcal{F}}
+    \newcommand\R{\mathbb{R}}
+    \newcommand\Z{\mathbb{Z}}
+    \newcommand\U{\mathcal{U}}
+    \newcommand\X{\mathcal{X}}
+    \newcommand\Y{\mathcal{Y}}
+    \newcommand\W{\mathbf{w}}
+
+    % Span
+    \newcommand\Sspan{\text{Span}}
+
+    % Equivalently
+    \newcommand\equivalently[1]{[ \textbf{Equivalently:} #1 ]}
+
+    % L'Hopital's Rule
+    \newcommand\lop{\stackrel{\textrm{H}}{=}}
+
+    % Check mark
+    \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+    % Vinculum
+    \newcommand\vinculum[1]{\frac{\hspace{#1cm}}{}}
+  \)
+</div>

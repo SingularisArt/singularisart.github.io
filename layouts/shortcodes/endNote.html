@@ -1,0 +1,39 @@
+{{ $path := path.Dir .Page.File.Path }}
+{{ $pathComponents := split $path "/" }}
+{{ $lengthMinusOne := sub (len $pathComponents) 1 }}
+{{ $baseDir := "" }}
+{{ range $index, $component := $pathComponents }}
+  {{ if lt $index $lengthMinusOne }}
+    {{ $baseDir = print $baseDir "/" $component }}
+  {{ end }}
+{{ end }}
+
+{{ $nextNoteDisplay := .Params.nextNoteDisplay }}
+{{ $prevNoteDisplay := .Params.prevNoteDisplay }}
+
+{{ $nextNoteLink := print $baseDir "/" .Params.nextNoteLink }}
+{{ $prevNoteLink := print $baseDir "/" .Params.prevNoteLink }}
+
+<header class="text-center mx-auto mb-8 bg-blue-50 dark:bg-gray-800 rounded-xl py-2 not-prose border border-gray-200 dark:border-gray-700">
+  <ul class="flex list-none items-center text-sky-600 dark:text-sky-500 justify-around px-2 overflow-auto">
+    <li>
+      {{ if isset .Params "prevNoteLink" }}
+        <a class="hover:underline whitespace-nowrap" href="{{ $prevNoteLink }}">
+          « {{ $prevNoteDisplay }}
+        </a>
+      {{ end }}
+    </li>
+    <li>
+      <a class="hover:underline" href="{{ $baseDir }}">
+        Table of Contents
+      </a>
+    </li>
+    <li>
+      {{ if isset .Params "nextNoteLink" }}
+        <a class="hover:underline whitespace-nowrap" href="{{ $nextNoteLink }}">
+          {{ $nextNoteDisplay }} »
+        </a>
+      {{ end }}
+    </li>
+  </ul>
+</header>

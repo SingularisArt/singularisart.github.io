@@ -75,6 +75,21 @@ module.exports = {
             "--tw-prose-invert-th-borders": theme("colors.gray[600]"),
             "--tw-prose-invert-td-borders": theme("colors.gray[700]"),
 
+            "--correct": "#00FF00",
+            "--incorrect": "#FF0000",
+            "--solution": "#00AEEF",
+            "--qedsolution": "#76B4CF",
+            "--proof": "#F035A3",
+            "--definition": "#F035A3",
+            "--theorem": "#F035A3",
+            "--lemma": "#F035A3",
+            "--remark": "#F035A3",
+            "--qedproof": "#F035A3",
+            "--question": "#00A6E4",
+            "--questionfg": "#F2FBF8",
+            "--example": "#00A6E4",
+            "--examplebg": "#F2FBF8",
+
             h1: {
               fontSize: "2.25rem",
               lineHeight: "2.5rem",

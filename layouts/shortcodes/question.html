@@ -1,0 +1,8 @@
+<div>
+  <span style="font-family: sans-serif; font-weight: bold; color: var(--question); background-color: var(--questionfg)">
+    Question {{ .Params.counter }} {{ if .Get "name" }} <span style="">({{ .Get "name" }})</span> {{ end }}
+  </span>
+  <span style="font-family: sans-serif; font-weight: normal;">
+    {{ .Inner }}
+  </span>
+</div>

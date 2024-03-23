@@ -577,6 +577,20 @@ video {
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
   --tw-prose-invert-th-borders: #4b5563;
   --tw-prose-invert-td-borders: #374151;
+  --correct: #00FF00;
+  --incorrect: #FF0000;
+  --solution: #00AEEF;
+  --qedsolution: #76B4CF;
+  --proof: #F035A3;
+  --definition: #F035A3;
+  --theorem: #F035A3;
+  --lemma: #F035A3;
+  --remark: #F035A3;
+  --qedproof: #F035A3;
+  --question: #00A6E4;
+  --questionfg: #F2FBF8;
+  --example: #00A6E4;
+  --examplebg: #F2FBF8;
 }
 
 .prose-singularisart :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1116,6 +1130,23 @@ dialog::backdrop {
   position: absolute;
   top: .6rem;
   right: .3rem;
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 0px;
+}
+
+.sol-qed {
+  display: inline-block;
+  width: 30px;
+  height: 10px;
+  background-color: var(--solution);
 }
 
 :is(.dark .dark\:prose-invert) {

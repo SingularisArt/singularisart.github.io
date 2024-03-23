@@ -29,16 +29,16 @@
         </td>
         <td>
           {{ with .Get "thm" }}
-            <a href="{{ . }}">PDF (thm)</a>
-          {{ else }}
-            <span class="text-gray-400">PDF (thm)</span>
-          {{ end }}
-        </td>
-        <td>
-          {{ with .Get "prf" }}
             <a href="{{ . }}">PDF (thm+prf)</a>
           {{ else }}
             <span class="text-gray-400">PDF (thm+prf)</span>
+          {{ end }}
+        </td>
+        <td>
+          {{ with .Get "qst" }}
+            <a href="{{ . }}">PDF (qst+sol)</a>
+          {{ else }}
+            <span class="text-gray-400">PDF (qst+sol)</span>
           {{ end }}
         </td>
         <td>
