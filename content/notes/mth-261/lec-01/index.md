@@ -2,6 +2,7 @@
 title: "Lecture 1: Linear Systems"
 draft: false
 comments: false
+latex: true
 ---
 
 # Lecture 1: Linear Systems

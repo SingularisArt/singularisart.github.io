@@ -24,7 +24,7 @@ notes after the lectures occur. You can view all my courses
   {{< note title="Calculus 2" note="2022, R. Kouzes" term="Winter" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Stats 2" note="2022, G, Greta" term="Winter" year="2022" html="/notes/" pdf="" def="" qst="" thm="" tex="" >}}
   {{< note title="Calculus 3" note="2022, R. Kouzes" term="Spring" year="2022" html="" pdf="" def="" thm="" prf="" tex="" >}}
-  {{< note title="Linear Algebra" note="2023, N. Kit" term="Fall" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
+  {{< note title="Linear Algebra" note="2023, N. Kit" term="Fall" year="2023" html="/notes/mth-261" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Vector Calculus 1" note="2023, C. Yao" term="Winter" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Vector Calculus 2" note="2023, F. Last" term="Spring" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
   {{< note title="Differential Equations" note="2023, F. Last" term="Spring" year="2023" html="" pdf="" def="" thm="" prf="" tex="" >}}
