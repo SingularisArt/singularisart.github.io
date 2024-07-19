@@ -1,11 +1,10 @@
 ---
-title: "Prerequisites for Writing LaTeX"
+title: "Setting up NeoVim"
 date:
 draft: false
 comments: true
 toc: true
 katex: false
-markup: "mmark"
 prevFile: "post-00"
 nextFile: "post-02"
 introFile: "post-00"
@@ -13,8 +12,8 @@ categories: []
 tags: []
 ---
 
-{{< header "Prerequisites for Writing LaTeX" >}}
-{{< intro part="one" length="seven-part" topic="writing LaTeX documents" >}}
+{{< header "Setting up NeoVim" >}}
+{{< intro part="one" length="nine-part" topic="writing LaTeX documents" >}}
 {{< navbar >}}
 {{< toc >}}
 

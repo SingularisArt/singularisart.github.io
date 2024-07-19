@@ -1,16 +1,20 @@
 ---
-title: "That's it my Friends"
+title: "How to Manage your Notes"
 date:
 draft: false
-toc: false
-comments: false
+comments: true
+toc: true
 katex: false
-markup: "mmark"
-prevFile: ""
-nextFile: ""
-introFile: ""
+prevFile: "post-07"
+nextFile: "post-09"
+introFile: "post-00"
 categories: []
 tags: []
 ---
 
-{{< header "That's it my Friends" >}}
+{{< header "How to Manage your Notes" >}}
+{{< intro part="eight" length="nine-part" topic="writing LaTeX documents" >}}
+{{< navbar >}}
+{{< toc >}}
+
+{{< navbar >}}

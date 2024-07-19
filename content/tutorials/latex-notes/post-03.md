@@ -1,11 +1,10 @@
 ---
-title: "An Introduction to Vimtex"
+title: "More Advanced Vimtex Features"
 date:
 draft: false
 comments: true
 toc: true
 katex: false
-markup: "mmark"
 prevFile: "post-02"
 nextFile: "post-04"
 introFile: "post-00"
@@ -13,8 +12,8 @@ categories: []
 tags: []
 ---
 
-{{< header "An Introduction to Vimtex" >}}
-{{< intro part="three" length="seven-part" topic="writing LaTeX documents" >}}
+{{< header "More Advanced Vimtex Features" >}}
+{{< intro part="three" length="nine-part" topic="writing LaTeX documents" >}}
 {{< navbar >}}
 {{< toc >}}
 

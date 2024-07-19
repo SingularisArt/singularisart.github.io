@@ -1,11 +1,10 @@
 ---
-title: "Using Tmux to Enhance your Workflow"
+title: "More Advanced UltiSnips Features"
 date:
 draft: false
 comments: true
 toc: true
 katex: false
-markup: "mmark"
 prevFile: "post-04"
 nextFile: "post-06"
 introFile: "post-00"
@@ -13,8 +12,8 @@ categories: []
 tags: []
 ---
 
-{{< header "Using Tmux to Enhance your Workflow" >}}
-{{< intro part="five" length="seven-part" topic="writing LaTeX documents" >}}
+{{< header "More Advanced UltiSnips Features" >}}
+{{< intro part="five" length="nine-part" topic="writing LaTeX documents" >}}
 {{< navbar >}}
 {{< toc >}}
 

@@ -5,7 +5,6 @@ draft: true
 toc: true
 comments: true
 katex: true
-markup: "mmark"
 prevFile: ""
 nextFile: ""
 introFile: "post-00"

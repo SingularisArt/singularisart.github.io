@@ -1,11 +1,10 @@
 ---
-title: "How I manage my notes"
+title: "Using Tmux to Enhance your Workflow"
 date:
 draft: false
 comments: true
 toc: true
 katex: false
-markup: "mmark"
 prevFile: "post-05"
 nextFile: "post-07"
 introFile: "post-00"
@@ -13,8 +12,8 @@ categories: []
 tags: []
 ---
 
-{{< header "How I Manage my Notes" >}}
-{{< intro part="six" length="seven-part" topic="writing LaTeX documents" >}}
+{{< header "Using Tmux to Enhance your Workflow" >}}
+{{< intro part="six" length="nine-part" topic="writing LaTeX documents" >}}
 {{< navbar >}}
 {{< toc >}}
 

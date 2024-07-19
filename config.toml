@@ -18,3 +18,14 @@ disqusShortname = "singularisart-github-io"
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[mediaTypes]
+  [mediaTypes."text/markdown"]
+    suffixes = ["md"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
