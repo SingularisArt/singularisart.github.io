@@ -1,11 +1,21 @@
 ---
 title: "Projects"
 date:
-license: false
+draft: true
+showTitle: true
+description: ""
+
+categories: []
+tags: []
+
 comments: false
+license: false
+toc: false
+katex: false
+
 prevFile: ""
 nextFile: ""
 introFile: ""
----
 
-# Projects
+series: false
+---

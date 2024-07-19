@@ -1,19 +1,33 @@
 ---
 title: "Notes"
-date: 2023-08-13T07:29:02-07:00
+date:
 draft: false
----
+showTitle: true
+description: ""
 
-# Notes
+categories: []
+tags: []
+
+comments: false
+license: true
+toc: false
+katex: false
+
+prevFile: ""
+nextFile: ""
+introFile: ""
+
+series: false
+---
 
 Below are all the notes I've taken since high school. None of this is official.
 In addition, I've included stripped down versions of the notes, such as
 definition only. They are
 [script](https://github.com/SingularisArt/school-setup/) generated. I've also
 included the link to their source code, if available. Note that the lecture
-notes are not reliable indicators for what was lectured in my year, or what will
-be lectured in your year, as I tend to change, add and remove contents from the
-notes after the lectures occur. You can view all my courses
+notes are not reliable indicators for what was lectured in my year, or what
+will be lectured in your year, as I tend to change, add and remove contents
+from the notes after the lectures occur. You can view all my courses
 [here](https://github.com/SingularisArt/LaTeX/tree/master/lecture-notes).
 
 {{< title "High School Diploma/Associates" >}}

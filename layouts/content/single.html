@@ -1,14 +1,16 @@
 {{ define "main" }}
 
 {{- $showTitle := .Params.showTitle -}}
+{{ $tutorials := .Site.GetPage "section" "tutorials" }}
 
 <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
   {{- if eq $showTitle true -}}
     <h1 class="text-center">{{ .Title }}</h1>
   {{- end -}}
-  {{ .Content }}
 
-  {{ range .Pages }}
+  <h2>Tutorials</h2>
+
+  {{ range $tutorials.Pages }}
     {{- if not .Params.series }}
       {{- $url := .Page.Permalink }}
       {{- with .Params.introFile }}
@@ -34,6 +36,26 @@
       </div>
     {{ end }}
   {{ end }}
+
+  <h2>Academics</h2>
+
+  All courses taken <br/>
+
+  Notes <br/>
+
+  Papers <br/>
+
+  Thesis <br/>
+
+  <h2>Projects</h2>
+
+  Notes Dashboard Manager <br/>
+
+  Memory Trainer <br/>
+
+  School Setup <br/>
 </div>
+
+{{ partial "footer.html" . }}
 
 {{ end }}

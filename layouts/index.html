@@ -3,12 +3,13 @@
 {{- $showTitle := .Params.showTitle -}}
 
 <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
+  {{ $tutorials := .Site.GetPage "section" "tutorials" }}
   {{- if eq $showTitle true -}}
     <h1 class="text-center">{{ .Title }}</h1>
   {{- end -}}
   {{ .Content }}
 
-  {{ range .Pages }}
+  {{ range $tutorials.Pages }}
     {{- if not .Params.series }}
       {{- $url := .Page.Permalink }}
       {{- with .Params.introFile }}
