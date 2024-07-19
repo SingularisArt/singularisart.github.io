@@ -1,18 +1,11 @@
 <div class="flex justify-center gap-5 flex-row">
   <div>
     <div class="flex justify-between">
-      <div>{{ .Get "title" }}, (<span class="text-gray-400">{{ .Get "note" }}</span>)</div>
-      <div>Year {{ .Get "year" }}: {{ .Get "term" }}</div>
+      <div>{{ .Get "title" }},</div>
+      <div>(<span class="text-gray-400">{{ .Get "term" }} {{ .Get "year" }}, by {{ .Get "note" }}</span>)</div>
     </div>
     <table class="border-separate border-spacing-3 border border-slate-500 mb-5">
       <tr>
-        <td>
-          {{ with .Get "html" }}
-            <a href="{{ . }}">HTML</a>
-          {{ else }}
-            <span class="text-gray-400">HTML</span>
-          {{ end }}
-        </td>
         <td>
           {{ with .Get "pdf" }}
             <a href="{{ . }}">PDF</a>

@@ -1,5 +1,5 @@
 ---
-title: "NeoVim with LaTeX"
+title: "Mastering LaTeX Workflow: A Comprehensive Guide"
 date:
 draft: false
 comments: false
@@ -10,9 +10,12 @@ nextFile: "post-01"
 introFile: "post-00"
 categories: ["programming"]
 tags: ["latex", "notes", "neovim", "inkscape", "tmux"]
+series: true
 ---
 
-{{< header "NeoVim with LaTeX" >}}
+{{< header "Mastering LaTeX Workflow: A Comprehensive Guide" >}}
+
+This will be a series on how I take notes with LaTeX!!!
 
 {{< carousel imgs="f,f" height="50" duration="7000" >}}
 

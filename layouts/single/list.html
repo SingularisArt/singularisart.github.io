@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{- $toc := .Params.toc -}}
+
+{{- if eq $toc true -}}
+  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 grid grid-rows-[1,100%] md:grid-cols-[13rem_auto]">
+    <div class="lg:block md:fixed md:block sm:hidden">{{ partial "toc.html" . }}</div>
+    <div></div>
+    <div class="post md:flex-1 md:pl-[10px]">
+      {{ .Content }}
+    </div>
+  </div>
+{{- else -}}
+  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8">
+    <div>
+      <div class="post">{{ .Content }}</div>
+    </div>
+  </div>
+{{- end -}}
+
+{{ partial "footer.html" . }}
+
+{{ end }}

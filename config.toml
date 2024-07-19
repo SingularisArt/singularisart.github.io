@@ -16,8 +16,8 @@ disqusShortname = "singularisart-github-io"
     startLevel = 2
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
+  category = "categories"
 
 [mediaTypes]
   [mediaTypes."text/markdown"]

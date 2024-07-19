@@ -1,0 +1,20 @@
+<input type="text" id="searchInput" placeholder="Search...">
+<ul id="searchResults"></ul>
+<script>
+  // sample code for querying and displaying result
+  var inputElement = document.getElementById('searchInput');
+  var resultsElement = document.getElementById('searchResults');
+
+  inputElement.addEventListener('input', function () {
+    var query = inputElement.value;
+    var results = index.search(query);
+
+    // Display search results
+    resultsElement.innerHTML = '';
+    results.forEach(function (result) {
+      var li = document.createElement('li');
+      li.textContent = result.title;
+      resultsElement.appendChild(li);
+    });
+  });
+</script>

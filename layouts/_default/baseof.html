@@ -1,51 +1,54 @@
 {{ $style := resources.Get "css/style.css" }}
 
+{{ $flexsearch := resources.Get "js/flexsearch.js" }}
 {{ $disqus := resources.Get "js/disqus.js" }}
 {{ $header := resources.Get "js/header.js" }}
 {{ $latex := resources.Get "js/latex.js" }}
-{{ $search := resources.Get "js/search.js" }}
 {{ $theme := resources.Get "js/theme.js" }}
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <title>{{ .Page.Title }} | SingularisArt</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Page.Title }} | SingularisArt</title>
 
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{ if .Params.latex }}{{ partial "mathjax.html" . }}{{ end }}
-    {{ if .Params.tikz }}{{ partial "tikz.html" . }}{{ end }}
-  </head>
-  <body class="leading-normal font-md text-gray-700 dark:text-gray-300 bg-[#fafafa] dark:bg-gray-900">
-    {{ partial "header.html" . }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.18.2/tocbot.css">
 
-    <div class="pt-20"></div>
+  {{ if .Params.latex }}{{ partial "mathjax.html" . }}{{ end }}
+  {{ if .Params.tikz }}{{ partial "tikz.html" . }}{{ end }}
+</head>
 
-    <div class="sm:px-8">
-      {{ block "main" . }} {{ end }}
-    </div>
+<body class="leading-normal font-md text-gray-700 bg-[#fafafa] dark:text-gray-300 dark:bg-gray-900">
+  {{ partial "header.html" . }}
 
-    <script id="dsq-count-scr" src="//singularisart-github-io.disqus.com/count.js" async></script>
-    <script defer type="text/javascript" src="{{ $disqus.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $header.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $latex.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $search.Permalink }}"></script>
-    <script defer type="text/javascript" src="{{ $theme.Permalink }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.js"></script>
-    <script type="text/javascript">
+  <div class="pt-20"></div>
+
+  <div class="sm:px-8">
+    {{ block "main" . }} {{ end }}
+  </div>
+
+  <script id="dsq-count-scr" src="//singularisart-github-io.disqus.com/count.js" async></script>
+  <script defer type="text/javascript" src="{{ $flexsearch.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $disqus.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $header.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $latex.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $theme.Permalink }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.js"></script>
+  <script type="text/javascript">
     tocbot.init({
       tocSelector: ".toc",
       contentSelector: ".post",
       headingSelector: "h2, h3, h4",
       collapseDepth: 4
     });
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
