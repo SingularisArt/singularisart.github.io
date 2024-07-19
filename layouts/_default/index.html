@@ -1,5 +1,30 @@
 {{ define "main" }}
-<div class="prose-singularisart dark:prose-invert flex px-4 py-4 sm:py-3 sm:px-8">
-  {{ .Content }}
-</div>
+
+{{- $toc := .Params.toc -}}
+{{- $showTitle := .Params.showTitle -}}
+
+{{- if eq $toc true -}}
+  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 grid grid-rows-[1,100%] md:grid-cols-[13rem_auto]">
+    <div class="lg:block md:fixed md:block sm:hidden">{{ partial "toc.html" . }}</div>
+    <div></div>
+    <div class="post md:flex-1 md:pl-[10px]">
+      {{- if eq $showTitle true -}}
+        <h1 class="text-center">{{ .Title }}</h1>
+      {{- end -}}
+      {{ .Content }}
+    </div>
+  </div>
+{{- else -}}
+  <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto sm:pt-6 sm:px-8 min-h-[100vh] flex flex-col">
+    <div class="post">
+      {{- if eq $showTitle true -}}
+        <h1 class="text-center">{{ .Title }}</h1>
+      {{- end -}}
+      {{ .Content }}
+    </div>
+  </div>
+{{- end -}}
+
+{{ partial "footer.html" . }}
+
 {{ end }}

@@ -1,0 +1,5 @@
+{{- define "stripShortcodes" -}}
+  {{- $content := .Content -}}
+  {{- $strippedContent := .Content | markdownify -}}
+  {{- $strippedContent | safeHTML -}}
+{{- end -}}

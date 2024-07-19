@@ -1,0 +1,57 @@
+{{- if not .series }}
+  <a class="flex flex-wrap article border-neutral-200 dark:border-neutral-700 border-2 rounded-md backdrop-blur hover:no-underline mb-4" href="{{ .url }}">
+    {{ with .backgroundImage }}
+      <!-- Image Container -->
+      <div class="w-full md:w-1/3">
+        <img src="{{ . }}" class="w-full m-0 p-0 object-cover rounded-l-md">
+      </div>
+    {{ end }}
+
+    <!-- Content Container -->
+    <div class="p-4 {{ if .backgroundImage }}w-full md:w-2/3{{ else }}w-full{{ end }}">
+      <div class="p-4">
+        <div class="items-center text-xl font-semibold">
+          <div class="text-cyan-600 font-bold text-xl decoration-primary-500 hover:underline-offset-2 dark:text-neutral" href="/">
+            {{ .title }}
+          </div>
+        </div>
+        <div class="text-gray-700 dark:text-gray-300">
+          <div class="flex flex-row flex-wrap items-center">
+            {{ .creationDate }}
+            {{ if ne .creationDate .lastModDate }}
+              <span class="px-2 text-primary-500">·</span>
+              Updated: {{ .lastModDate }}
+            {{ end }}
+            <span class="px-2 text-primary-500">·</span>
+            <span>{{ .wordCount }} word{{ if (ne .wordCount 1) }}s{{ end }}</span>
+            <span class="px-2 text-primary-500">·</span>
+            <span title="reading-time">{{ .readingTime }} minute{{ if (ne .readingTime 1) }}s{{ end }}</span>
+          </div>
+          <div class="flex flex-row flex-wrap items-center">
+            {{ range .categories }}
+            <span class="mr-2 mt-1 text-gray-700 dark:text-gray-300">
+              <span class="flex" style="cursor: pointer;">
+                <span class="text-gray-700 dark:text-gray-300 rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+                  {{ . }}
+                </span>
+              </span>
+            </span>
+            {{ end }}
+            {{ range .tags }}
+            <span class="mr-2 mt-1 text-gray-700 dark:text-gray-300">
+              <span class="flex" style="cursor: pointer;">
+                <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+                  {{ . }}
+                </span>
+              </span>
+            </span>
+            {{ end }}
+          </div>
+        </div>
+        <div class="py-1 max-w-fit prose dark:prose-invert">
+          {{ .summary }}
+        </div>
+      </div>
+    </div>
+  </a>
+{{ end }}

@@ -2,20 +2,21 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-toc: true
-comments: true
-katex: true
-prevFile: ""
-nextFile: ""
-introFile: "post-00"
+showTitle: true
+description: ""
+
 categories: []
 tags: []
+
+comments: false
+license: false
+toc: false
+katex: false
+
+prevFile: ""
+nextFile: ""
+introFile: ""
+
+series: false
+type: ""
 ---
-
-{{< header "{{ replace .Name "-" " " | title }}" >}}
-{{< intro part="one" length="one-part" topic="description" >}}
-{{< navbar >}}
-{{< toc >}}
-
-{{< navbar >}}
-{{< begin "/{{ .File.Dir }}post-00" >}}

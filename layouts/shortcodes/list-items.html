@@ -1,0 +1,39 @@
+{{- $folder := .Get "folder" -}}
+{{- $files := (readDir $folder) -}}
+{{- range first 3 $files }}
+  {{- $file := . -}}
+  {{- $url := printf "/%s/%s" $folder $file.Name -}}
+
+  <a class="flex flex-wrap article border-neutral-200 dark:border-neutral-700 border-2 rounded-md backdrop-blur hover:no-underline mb-4" href="{{ $url }}">
+    <!-- Image Container -->
+    {{ if hasPrefix $file.Name "image" }}
+      <div class="w-full md:w-1/3">
+        <img src="{{ $url }}" class="w-full m-0 p-0 object-cover rounded-l-md">
+      </div>
+    {{ end }}
+
+    <!-- Content Container -->
+    <div class="p-4 {{ if hasPrefix $file.Name "image" }}w-full md:w-2/3{{ else }}w-full{{ end }}">
+      <div class="p-4">
+        <div class="items-center text-xl font-semibold">
+          <div class="text-cyan-600 font-bold text-xl decoration-primary-500 hover:underline-offset-2 dark:text-neutral">
+            {{ .Name }}
+          </div>
+        </div>
+        <div class="text-gray-700 dark:text-gray-300">
+          <div class="flex flex-row flex-wrap items-center">
+            {{ if .Date.Format "January 2 Monday, 2006" }}
+              <span class="px-2 text-primary-500">·</span>
+              {{ .Date.Format "January 2 Monday, 2006" }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="py-1 max-w-fit prose dark:prose-invert">
+          {{ if $file.Summary }}
+            {{ $file.Summary }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </a>
+{{- end -}}

@@ -143,5 +143,15 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
+    function({ addUtilities }) {
+      addUtilities(
+        {
+          ".font-small-caps": {
+            fontVariant: "small-caps",
+          },
+        },
+        ["responsive", "hover"]
+      );
+    },
   ],
 };

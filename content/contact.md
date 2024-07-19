@@ -1,8 +1,7 @@
 ---
-title: "Mastering LaTeX Workflow: A Comprehensive Guide"
+title: "Contact"
 date:
 draft: false
-showTitle: true
 description: ""
 
 categories: []
@@ -18,4 +17,7 @@ nextFile: ""
 introFile: ""
 
 series: false
+type: "contact"
 ---
+
+Hi there, :)

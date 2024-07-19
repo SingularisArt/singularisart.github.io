@@ -6,8 +6,6 @@ comments: false
 prevFile: ""
 nextFile: ""
 introFile: ""
-tags: []
-categories: []
 ---
 
 # Projects

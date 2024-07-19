@@ -2,14 +2,20 @@
 title: "That's it my Friends"
 date:
 draft: false
-toc: false
-comments: false
+showTitle: true
+description: ""
+
+categories: []
+tags: []
+
+comments: true
+license: true
+toc: true
 katex: false
+
 prevFile: ""
 nextFile: ""
 introFile: ""
-categories: []
-tags: []
----
 
-{{< header "That's it my Friends" >}}
+series: true
+---
