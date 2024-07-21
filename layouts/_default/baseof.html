@@ -1,6 +1,8 @@
 {{ $style := resources.Get "css/style.css" }}
 
 {{ $flexsearch := resources.Get "js/flexsearch.js" }}
+{{ $enable_dialog := resources.Get "js/enable-dialog.js" }}
+{{ $search := resources.Get "js/search.js" }}
 {{ $disqus := resources.Get "js/disqus.js" }}
 {{ $header := resources.Get "js/header.js" }}
 {{ $latex := resources.Get "js/latex.js" }}
@@ -39,6 +41,9 @@
   <script defer type="text/javascript" src="{{ $header.Permalink }}"></script>
   <script defer type="text/javascript" src="{{ $latex.Permalink }}"></script>
   <script defer type="text/javascript" src="{{ $theme.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $flexsearch.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $search.Permalink }}"></script>
+  <script defer type="text/javascript" src="{{ $enable_dialog.Permalink }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.js"></script>
   <script type="text/javascript">
     tocbot.init({

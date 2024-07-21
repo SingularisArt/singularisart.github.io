@@ -1,40 +1,52 @@
 {{ define "main" }}
 
 {{- $showTitle := .Params.showTitle -}}
+{{ $tutorials := .Site.GetPage "section" "tutorials" }}
 
 <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
-  {{ $tutorials := .Site.GetPage "section" "tutorials" }}
   {{- if eq $showTitle true -}}
     <h1 class="text-center">{{ .Title }}</h1>
   {{- end -}}
-  {{ .Content }}
 
-  {{ range $tutorials.Pages }}
-    {{- if not .Params.series }}
-      {{- $url := .Page.Permalink }}
-      {{- with .Params.introFile }}
-        {{- $url = printf "%s%s" $url . }}
-      {{- end }}
+  <section class="relative">
+    <h2>Tutorials</h2>
 
-      <div class="mb-[2em]">
-        <a class="hover:no-underline text-gray-700 dark:text-gray-300" href={{ $url }}>
-          <div class="text-[80%] font-small-caps lowercase font-[700]">
-            <span>{{ .Page.Date.Format "January 2 Monday, 2006" }}</span>
-            {{ if ne .Lastmod .Date }}
-              <span class="px-2 text-primary-500">•</span>
-              Updated: {{ .Page.Lastmod.Format "January 2 Monday, 2006" }}
-            {{ end }}
-            <span class="px-2 text-primary-500">•</span>
-            <span>{{ .Page.WordCount }} word{{ if (ne .Page.WordCount 1) }}s{{ end }}</span>
-            <span class="px-2 text-primary-500">•</span>
-            <span title="reading-time">{{ .Page.ReadingTime }} minute{{ if (ne .Page.ReadingTime 1) }}s{{ end }}</span>
-          </div>
-          <h2 class="mb-[0.2em] mr-0 mt-0 ml-0 font-[600] leading-7">{{ .Title }}</h2>
-          <p class="m-0">{{ .Summary }}</p>
-        </a>
-      </div>
+    Single articles/multi-part series that I've written explaining any topic
+    that piques my interest. I write them in a way that I would have liked to
+    have read them when I was learning the topic. Here are the three most
+    recent tutorials that I've written.
+
+    <br />
+    <br />
+
+    {{ range $tutorials.Pages | first 3 }}
+      {{ partial "list-tutorial.html" . }}
     {{ end }}
-  {{ end }}
+
+    {{- if gt (len $tutorials.Pages) 3 -}}
+      <div class="text-center">
+        <a class="text-primary-500 hover:text-primary-700" href="{{ $tutorials.RelPermalink }}">View More</a>
+      </div>
+    {{- end -}}
+
+    {{ partial "line.html" . }}
+  </section>
+
+  <section class="relative">
+    <h2>Projects</h2>
+
+    {{ range $tutorials.Pages | first 3 }}
+      {{ partial "list-tutorial.html" . }}
+    {{ end }}
+
+    {{- if gt (len $tutorials.Pages) 3 -}}
+      <div class="text-center">
+        <a class="text-primary-500 hover:text-primary-700" href="{{ $tutorials.RelPermalink }}">View More</a>
+      </div>
+    {{- end -}}
+
+    {{ partial "line.html" . }}
+  </section>
 </div>
 
 {{ end }}

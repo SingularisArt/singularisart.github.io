@@ -1155,12 +1155,24 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .top-0 {
@@ -1255,6 +1267,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1265,10 +1281,6 @@ video {
 
 .mt-\[0\.2em\] {
   margin-top: 0.2em;
-}
-
-.mt-0 {
-  margin-top: 0px;
 }
 
 .block {
@@ -1319,6 +1331,10 @@ video {
   height: 2rem;
 }
 
+.max-h-96 {
+  max-height: 24rem;
+}
+
 .min-h-0 {
   min-height: 0px;
 }
@@ -1327,8 +1343,8 @@ video {
   min-height: 100vh;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-6 {
@@ -1444,10 +1460,6 @@ video {
   gap: 0.25rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1462,6 +1474,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .whitespace-nowrap {
@@ -1622,36 +1638,12 @@ video {
   padding-bottom: 2rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
 
-.pt-\[10em\] {
-  padding-top: 10em;
-}
-
-.pt-\[5em\] {
-  padding-top: 5em;
-}
-
-.pt-\[2em\] {
-  padding-top: 2em;
-}
-
-.pt-\[3em\] {
-  padding-top: 3em;
-}
-
 .pt-\[4em\] {
   padding-top: 4em;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -2361,6 +2353,11 @@ textarea.form-control.is-invalid {
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:border-gray-800) {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:border-neutral-700) {
   --tw-border-opacity: 1;
   border-color: rgb(64 64 64 / var(--tw-border-opacity));
@@ -2416,14 +2413,6 @@ textarea.form-control.is-invalid {
     display: none;
   }
 
-  .sm\:w-2\/3 {
-    width: 66.666667%;
-  }
-
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2464,10 +2453,6 @@ textarea.form-control.is-invalid {
     flex: 1 1 0%;
   }
 
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-\[13rem_auto\] {
     grid-template-columns: 13rem auto;
   }
@@ -2490,10 +2475,6 @@ textarea.form-control.is-invalid {
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
