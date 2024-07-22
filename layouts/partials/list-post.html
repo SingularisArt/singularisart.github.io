@@ -6,7 +6,7 @@
 
   <div class="mb-[2em]">
     <a class="hover:no-underline text-gray-700 dark:text-gray-300" href={{ $url }}>
-      <div class="text-[80%] font-small-caps lowercase font-[700]">
+      <div style="font-size: 0.75em; line-height: 1rem;" class="font-small-caps lowercase font-[700]">
         <span>{{ .Page.Date.Format "January 2 Monday, 2006" }}</span>
         {{ if ne .Lastmod .Date }}
           <span class="px-2 text-primary-500">•</span>
@@ -17,7 +17,7 @@
         <span class="px-2 text-primary-500">•</span>
         <span title="reading-time">{{ .Page.ReadingTime }} minute{{ if (ne .Page.ReadingTime 1) }}s{{ end }}</span>
       </div>
-      <h2 class="mb-[0.2em] mr-0 mt-0 ml-0 font-[600] leading-7">{{ .Title }}</h2>
+      <h3 class="mb-[0.2em] mr-0 mt-0 ml-0 font-[600] leading-7">{{ .Title }}</h3>
       <p class="m-0">{{ .Summary }}</p>
     </a>
   </div>

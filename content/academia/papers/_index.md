@@ -1,15 +1,15 @@
 ---
-title: "Content"
+title: "Papers"
 date:
 draft: false
-description: ""
 showTitle: true
+description: ""
 
 categories: []
 tags: []
 
 comments: false
-license: true
+license: false
 toc: false
 katex: false
 
@@ -18,5 +18,5 @@ nextFile: ""
 introFile: ""
 
 series: false
-type: "content"
+type: "papers"
 ---

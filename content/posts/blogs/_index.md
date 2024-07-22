@@ -1,5 +1,5 @@
 ---
-title: "Tutorials"
+title: "Blogs"
 date:
 draft: false
 showTitle: true
@@ -18,4 +18,5 @@ nextFile: ""
 introFile: ""
 
 series: false
+type: "blogs"
 ---

@@ -1,0 +1,55 @@
+{{- $link := .Params.link -}}
+{{- $title := .Params.title -}}
+{{- $authors := .Params.authors -}}
+{{- $comments := .Params.comments -}}
+{{- $subject := .Params.subject -}}
+{{- $journal_ref := .Params.journal_ref -}}
+{{- $doi := .Params.doi -}}
+
+<div>
+  <div>
+    [1] <a class="font-bold" href="{{ $link }}" title="Abstract">{{ $link }}</a>
+  </div>
+  <div style="margin-left: 2em;">
+    <div class="text-[125%] font-bold mt-[0.25em]">{{ $title }}</div>
+    <div class="font-normal text-[110%]">
+      {{- if $authors -}}
+        {{- range $index, $author := $authors -}}
+          {{- if eq $index (sub (len $authors) 1) -}}
+            {{- if gt (len $authors) 1 -}} and&nbsp; {{- end -}}
+              {{ $author }}
+            {{- else -}}
+              {{ $author }},&nbsp;
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    </div>
+    {{- if $comments -}}
+      <div class="text-[90%] font-normal">
+        <span>Comments:</span> {{ $comments }}
+      </div>
+    {{- end -}}
+
+    {{- if $subject -}}
+      <div class="text-[90%] font-normal">
+        <span>Subject:</span>
+        <span style="font-weight:bold;">{{ $subject }}</span>
+      </div>
+    {{- end -}}
+
+    {{- if $journal_ref -}}
+      <div class="text-[90%] font-normal">
+        <span>Journal ref:</span> {{ $journal_ref }}
+      </div>
+    {{- end -}}
+
+    {{- if $doi -}}
+      <div class="text-[90%] font-normal">
+        <span>DOI:</span>
+        <a href="https://doi.org/{{ $doi }}" title="DOI">
+          {{ $doi }}
+        </a>
+      </div>
+    {{- end -}}
+  </div>
+</div>

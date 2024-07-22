@@ -18,4 +18,5 @@ nextFile: ""
 introFile: ""
 
 series: false
+type: "projects"
 ---

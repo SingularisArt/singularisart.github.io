@@ -1,0 +1,88 @@
+{{ define "main" }}
+
+{{- $showTitle := .Params.showTitle -}}
+{{ $pages := .Site.GetPage "posts/tutorials" }}
+{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+
+<div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
+
+  <div class="text-center mb-8 mt-8">
+    {{ partial "pagination.html" . }}
+  </div>
+
+  {{- if eq $showTitle true -}}
+    <h1 class="text-center">{{ .Title }}</h1>
+  {{- end -}}
+
+  {{ range $paginator.Pages }}
+    {{ partial "list-post.html" . }}
+  {{ end }}
+
+</div>
+
+<style>
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+
+  .page-item {
+    margin: 0 4px;
+  }
+
+  .page-link {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 8px 12px;
+    height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--pagination-enabled-light);
+    text-decoration: none;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .page-link:hover {
+    background-color: #e9ecef;
+    text-decoration: none;
+    color: #0056b3;
+  }
+
+  .page-item.active .page-link {
+    background-color: #f1f1f1;
+    color: var(--pagination-active-light);
+    border-color: #dee2e6;
+  }
+
+  .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    background-color: #fff;
+  }
+
+  .page-item:first-child .page-link,
+  .page-item:last-child .page-link {
+    border-radius: 4px;
+  }
+
+  .page-link[aria-label="First"],
+  .page-link[aria-label="Previous"],
+  .page-link[aria-label="Next"],
+  .page-link[aria-label="Last"] {
+    font-weight: bold;
+  }
+
+  .page-link[aria-label="First"] span,
+  .page-link[aria-label="Previous"] span,
+  .page-link[aria-label="Next"] span,
+  .page-link[aria-label="Last"] span {
+    font-size: 1.2em;
+  }
+</style>
+
+{{ end }}

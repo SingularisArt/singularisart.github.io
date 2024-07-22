@@ -4,6 +4,7 @@
   class="fixed z-50 top-0 w-full flex items-center px-4 py-4 sm:py-3 sm:px-8 text-header-text-light bg-neutral-200 dark:text-header-text-dark dark:bg-gray-800">
   <div class="flex flex-1 items-center justify-center gap-5">
     <a class="hover:underline {{ if eq $currentPage.Title "Home" }}font-medium text-sky-600{{ end }}" href="/">Home</a>
+    <a class="hover:underline {{ if eq $currentPage.Title "Posts" }}font-medium text-sky-600{{ end }}" href="/posts">Posts</a>
     <a class="hover:underline {{ if eq $currentPage.Title "Projects" }}font-medium text-sky-600{{ end }}" href="/projects">Projects</a>
     <a class="hover:underline {{ if eq $currentPage.Title "Academia" }}font-medium text-sky-600{{ end }}" href="/academia">Academia</a>
     <a class="hover:underline {{ if eq $currentPage.Title "Categories" "Tags" }}font-medium text-sky-600{{ end }}" href="/categories">Categories/Tags</a>
@@ -25,15 +26,13 @@
 <div id="mobile-menu"
   class="hidden sm:hidden fixed z-50 top-14 left-0 w-full bg-neutral-200 dark:bg-gray-800 text-header-text-light dark:text-header-text-dark">
   <div class="text-center p-4">
-    <a class="block hover:underline {{ if eq $currentPage.Title "Home" }}font-medium text-sky-600{{ end }}"
-      href="/">Home</a>
-    <a class="block hover:underline {{ if eq $currentPage.Title "Content" }}font-medium text-sky-600{{ end }}"
-      href="/content">Content</a>
-    <a class="block hover:underline {{ if eq $currentPage.Title "Contact" }}font-medium text-sky-600{{ end }}"
-      href="/contact">Contact</a>
-    <a class="block hover:underline {{ if eq $currentPage.Title "About" }}font-medium text-sky-600{{ end }}"
-      href="/about">About</a>
-    <a class="block hover:underline {{ if eq $currentPage.Title "Categories" }}font-medium text-sky-600{{ end }}"
-      href="/categories">Categories</a>
+    <a class="block hover:underline {{ if eq $currentPage.Title "Home" }}font-medium text-sky-600{{ end }}" href="/">Home</a>
+    <a class="block hover:underline {{ if eq $currentPage.Title "Posts" }}font-medium text-sky-600{{ end }}" href="/posts">Posts</a>
+    <a class="block hover:underline {{ if eq $currentPage.Title "Projects" }}font-medium text-sky-600{{ end }}" href="/projects">Projects</a>
+    <a class="block hover:underline {{ if eq $currentPage.Title "Academia" }}font-medium text-sky-600{{ end }}" href="/academia">Academia</a>
+    <a class="block hover:underline {{ if eq $currentPage.Title "Categories" "Tags" }}font-medium text-sky-600{{ end }}" href="/categories">Categories/Tags</a>
+
+    {{ partial "search.html" . }}
+    {{ partial "theme.html" . }}
   </div>
 </div>

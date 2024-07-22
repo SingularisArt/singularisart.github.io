@@ -2,25 +2,36 @@
 {{- $excludedPath := "content/content.md" -}}
 {{- $excludedPath := "layouts/_default/search.json" -}}
 {{- $jsonPages := slice -}}
+
 {{- range $pages -}}
   {{- if and (ne .Permalink $excludedPath) (not .Params.draft) -}}
     {{- $jsonPages = $jsonPages | append . -}}
   {{- end -}}
 {{- end -}}
+
 [
   {{- $first := true -}}
   {{- range $index, $page := $jsonPages -}}
     {{- if not $first -}},{{- end -}}
-    {{- $path := $page.Permalink | relURL -}}
-    {{- $type := index (split $path "/") 1 -}}
+    {{- $url := $page.Permalink | relURL -}}
+
+    {{- $contentWithNewLines := $page.Plain | plainify -}}
+    {{- $summaryWithNewLines := $page.Summary | plainify -}}
+
+    {{- $title := $page.Title | plainify -}}
+    {{- $content := replace $contentWithNewLines "\n" " " -}}
+    {{- $summary := replace $summaryWithNewLines "\n" " " -}}
+    {{- $date := $page.Date.Format "January 2 Monday, 2006" -}}
+    {{- $type := index (split $url "/") 1 -}}
+
     {
       "id": {{ $index }},
-      "title": "{{ $page.Title | plainify }}",
-      "content": "{{ $page.Plain | plainify }}",
-      "summary": "{{ $page.Summary | plainify }}",
-      "date": "{{ $page.Date.Format "January 2 Monday, 2006" }}",
+      "title": "{{ $title }}",
+      "content": "{{ $content }}",
+      "summary": "{{ $summary }}",
+      "date": "{{ $date }}",
       "type": "{{ $type }}",
-      "url": "{{ $path }}"
+      "url": "{{ $url }}"
     }
     {{- $first = false -}}
   {{- end -}}

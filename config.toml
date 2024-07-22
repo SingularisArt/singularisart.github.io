@@ -23,6 +23,11 @@ disqusShortname = "singularisart-github-io"
   [mediaTypes."text/markdown"]
     suffixes = ["md"]
 
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = "page"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]

@@ -1,0 +1,64 @@
+<ul class="flex p-0 list-none">
+  {{- with .Paginator }}
+    {{- $currentPageNumber := .PageNumber }}
+
+    {{- with .First }}
+      <li>
+        {{- if ne $currentPageNumber .PageNumber }}
+          <a href="{{ .URL }}" class="px-3 py-1 no-underline hover:no-underline border rounded transition-colors">
+            <span>&laquo;&laquo;</span>
+          </a>
+        {{- else }}
+          <span class="px-3 py-1 border rounded">&laquo;&laquo;</span>
+        {{- end }}
+      </li>
+    {{- end }}
+
+    <li>
+      {{- with .Prev }}
+        <a href="{{ .URL }}" class="px-3 py-1 no-underline hover:no-underline border rounded transition-colors">
+          <span>&laquo;</span>
+        </a>
+      {{- else }}
+        <span class="px-3 py-1 border rounded">&laquo;</span>
+      {{- end }}
+    </li>
+
+    {{- $slots := 5 }}
+    {{- $start := math.Max 1 (sub .PageNumber (math.Floor (div $slots 2))) }}
+    {{- $end := math.Min .TotalPages (sub (add $start $slots) 1) }}
+    {{- if lt (add (sub $end $start) 1) $slots }}
+      {{- $start = math.Max 1 (add (sub $end $slots) 1) }}
+    {{- end }}
+
+    {{- range $k := seq $start $end }}
+      <li>
+        {{- if eq $.Paginator.PageNumber $k }}
+          <a class="hover:no-underline px-3 py-1 border rounded" role="button">
+            {{ $k }}
+          </a>
+        {{- else }}
+          <a href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}" class="px-3 py-1 border rounded" role="button">{{ $k }}</a>
+        {{- end }}
+      </li>
+    {{- end }}
+
+    <li>
+      {{- with .Next }}
+        <a href="{{ .URL }}" class="px-3 py-1 no-underline hover:no-underline border rounded transition-colors"><span aria-hidden="true">&raquo;</span></a>
+      {{- else }}
+        <span class="px-3 py-1 border rounded">&raquo;</span>
+      {{- end }}
+    </li>
+
+    {{- with .Last }}
+      <li>
+        {{- if ne $currentPageNumber .PageNumber }}
+          <a href="{{ .URL }}" class="px-3 py-1 no-underline hover:no-underline border rounded transition-colors"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        {{- else }}
+          <span class="px-3 py-1 border rounded">&raquo;&raquo;</span>
+        {{- end }}
+      </li>
+    {{- end }}
+  {{- end }}
+</ul>

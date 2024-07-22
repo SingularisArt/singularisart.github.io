@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+{{- $showTitle := .Params.showTitle -}}
+
+{{ $tutorials := .Site.GetPage "posts/tutorials" }}
+{{ $blogs := .Site.GetPage "posts/blogs" }}
+
+<div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
+  {{- if eq $showTitle true -}}
+    <h1 class="text-center">{{ .Title }}</h1>
+  {{- end -}}
+
+  <section class="relative">
+    <h2><a href="/posts/tutorials" class="text-primary-500 hover:text-primary-700">Tutorials</a></h2>
+
+    {{ range $tutorials.Pages | first 3 }}
+      {{ partial "list-post.html" . }}
+    {{ end }}
+
+    {{- if gt (len $tutorials.Pages) 3 -}}
+      <div class="text-center">
+        <a class="text-primary-500 hover:text-primary-700" href="{{ $tutorials.RelPermalink }}">View More</a>
+      </div>
+    {{- end -}}
+
+    {{ partial "line.html" . }}
+  </section>
+
+  <section class="relative">
+    <h2><a href="/posts/blogs" class="text-primary-500 hover:text-primary-700">Blogs</a></h2>
+
+    {{ range $blogs.Pages }}
+      {{ partial "list-post.html" . }}
+    {{ end }}
+
+    {{- if gt (len $blogs.Pages) 3 -}}
+      <div class="text-center">
+        <a class="text-primary-500 hover:text-primary-700" href="{{ $blogs.RelPermalink }}">View More</a>
+      </div>
+    {{- end -}}
+
+    {{ partial "line.html" . }}
+  </section>
+</div>
+
+{{ end }}
