@@ -5,8 +5,8 @@ draft: false
 showTitle: true
 description: ""
 
-categories: []
-tags: []
+categories: ["category 1", "category 2"]
+tags: ["tag 1", "tag 2"]
 
 comments: false
 license: false

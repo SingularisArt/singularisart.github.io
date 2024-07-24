@@ -1,5 +1,7 @@
 {{- if not .Params.series }}
   {{- $url := .Page.Permalink }}
+  {{- $tags := .Params.tags -}}
+  {{- $categories := .Params.categories -}}
   {{- with .Params.introFile }}
     {{- $url = printf "%s%s" $url . }}
   {{- end }}
@@ -20,5 +22,21 @@
       <h3 class="mb-[0.2em] mr-0 mt-0 ml-0 font-[600] leading-7">{{ .Title }}</h3>
       <p class="m-0">{{ .Summary }}</p>
     </a>
+    <div class="flex flex-1 justify-stretch">
+      <div>
+        {{ range $index, $category := $categories }}
+          <a class="block hover:underline" href="/category/{{ $category }}">
+            {{ partial "tag-icon.html" . }} {{ $category }}
+          </a>
+        {{ end }}
+      </div>
+      <div>
+        {{ range $index, $tag := $tags }}
+          <a class="block hover:underline" href="/tags/{{ $tag }}">
+            {{ partial "tag-icon.html" . }} {{ $tag }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
   </div>
 {{ end }}

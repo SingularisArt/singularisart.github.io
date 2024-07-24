@@ -33,29 +33,12 @@ fetch("/search/index.json")
     console.error("Error fetching data:", error);
   });
 
-const searchIcon = document.querySelector("[data-open-modal]");
-const searchOverlay = document.querySelector("[data-modal]");
-var inputElement = document.getElementById("search-query");
-var resultsElement = document.getElementById("search-results");
-console.log(inputElement, resultsElement)
+var searchHeader = document.getElementById("search-query-header");
+var searchFullpage = document.getElementById("search-query-fullpage");
+var resultsHeader = document.getElementById("search-results-header");
+var resultsFullpage = document.getElementById("search-results-fullpage");
 
-// Toggle search overlay
-searchIcon.addEventListener("click", function() {
-  searchOverlay.showModal();
-  document.body.classList.add("modal-open");
-  inputElement.focus();
-});
-
-// Close overlay on outside click
-searchOverlay.addEventListener("click", function(e) {
-  if (e.target === searchOverlay) {
-    searchOverlay.close();
-    document.body.classList.remove("modal-open");
-  }
-});
-
-// Search input event
-inputElement.addEventListener("input", function() {
+function search(inputElement, resultsElement) {
   var query = inputElement.value;
   var results = index.search(query);
 
@@ -102,4 +85,14 @@ inputElement.addEventListener("input", function() {
       resultsElement.appendChild(li);
     }
   });
+}
+
+// Search input event for header search
+searchHeader.addEventListener("input", function() {
+  search(searchHeader, resultsHeader);
+});
+
+// Search input event for fullpage search
+searchFullpage.addEventListener("input", function() {
+  search(searchFullpage, resultsFullpage);
 });
