@@ -18,6 +18,7 @@ nextFile: ""
 introFile: "post-00"
 
 series: false
+type: "tutorials"
 ---
 
 Hi there!! Hi there!! Hi there!! Hi there!! Hi there!! Hi there!! Hi there!! Hi

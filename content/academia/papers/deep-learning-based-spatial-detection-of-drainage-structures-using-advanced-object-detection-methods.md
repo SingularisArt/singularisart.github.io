@@ -12,4 +12,5 @@ comments: "v2, 8 pages, final version published in IEEE Transdisciplinary AI (Tr
 subject: "Computer Vision"
 journal_ref: "IEEE Transdisciplinary AI (TransAI)"
 pages: "8 pages"
+type: "papers"
 ---

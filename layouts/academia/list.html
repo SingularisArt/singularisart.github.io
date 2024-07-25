@@ -1,16 +1,33 @@
 {{ define "main" }}
 
 {{- $showTitle := .Params.showTitle -}}
-{{ $tutorials := .Site.GetPage "section" "tutorials" }}
+
+{{ $papers := .Site.GetPage "academia/papers" }}
 
 <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
   {{- if eq $showTitle true -}}
     <h1 class="text-center">{{ .Title }}</h1>
   {{- end -}}
 
-  <h2>Papers</h2>
+  <h2><a class="text-sky-600 hover:underline" href="/academia/papers">Papers</a></h3>
 
-  <h2>Notes</h2>
+  <div>
+    {{ range $index, $paper := $papers.Pages | first 3 }}
+      <span class="flex gap-1 mb-2">[{{ add $index 1 }}]{{ partial "list-paper.html" . }}</span>
+    {{ end }}
+  </div>
+
+  {{- if gt (len $papers.Pages) 3 -}}
+    <div class="text-center">
+      <a class="text-sky-600 hover:underline" href="{{ $papers.RelPermalink }}">View More</a>
+    </div>
+  {{- end -}}
+
+  <h2><a class="text-sky-600 hover:underline" href="/academia/presentations">Presentations</a></h3>
+
+  <h2><a class="text-sky-600 hover:underline" href="/academia/talks">Talks</a></h3>
+
+  <h2><a class="text-sky-600 hover:underline" href="/academia/notes">Notes</a></h3>
 </div>
 
 {{ partial "footer.html" . }}

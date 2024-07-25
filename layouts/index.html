@@ -14,9 +14,9 @@
   {{- end -}}
 
   <section class="relative">
-    <h2><a href="/posts" class="text-primary-500 hover:text-primary-700">Posts</a></h2>
+    <h2><a class="text-sky-600 hover:underline" href="/posts" class="text-primary-500 hover:text-primary-700">Posts</a></h2>
 
-    <h3><a href="/posts/tutorials" class="text-primary-500 hover:text-primary-700">Tutorials</a></h3>
+    <h3><a class="text-sky-600 hover:underline" href="/posts/tutorials" class="text-primary-500 hover:text-primary-700">Tutorials</a></h3>
 
     {{ range $tutorials.Pages | first 3 }}
       {{ partial "list-post.html" . }}
@@ -24,11 +24,11 @@
 
     {{- if gt (len $tutorials.Pages) 3 -}}
       <div class="text-center">
-        <a class="text-primary-500 hover:text-primary-700" href="{{ $tutorials.RelPermalink }}">View More</a>
+        <a class="text-sky-600 hover:underline" href="{{ $tutorials.RelPermalink }}">View More</a>
       </div>
     {{- end -}}
 
-    <h3><a href="/posts/blogs" class="text-primary-500 hover:text-primary-700">Blogs</a></h3>
+    <h3><a class="text-sky-600 hover:underline" href="/posts/blogs">Blogs</a></h3>
 
     {{ range $blogs.Pages | first 3 }}
       {{ partial "list-post.html" . }}
@@ -36,7 +36,7 @@
 
     {{- if gt (len $blogs.Pages) 3 -}}
       <div class="text-center">
-        <a class="text-primary-500 hover:text-primary-700" href="{{ $blogs.RelPermalink }}">View More</a>
+        <a class="text-sky-600 hover:underline" href="{{ $blogs.RelPermalink }}">View More</a>
       </div>
     {{- end -}}
 
@@ -44,7 +44,7 @@
   </section>
 
   <section class="relative">
-    <h2><a href="/projects" class="text-primary-500 hover:text-primary-700">Projects</a></h2>
+    <h2><a class="text-sky-600 hover:underline" href="/projects">Projects</a></h2>
 
     {{ range $projects.Pages | first 3 }}
       {{ partial "list-project.html" . }}
@@ -52,7 +52,7 @@
 
     {{- if gt (len $projects.Pages) 3 -}}
       <div class="text-center">
-        <a class="text-primary-500 hover:text-primary-700" href="{{ $tutorials.RelPermalink }}">View More</a>
+        <a class="text-sky-600 hover:underline" href="{{ $projects.RelPermalink }}">View More</a>
       </div>
     {{- end -}}
 
@@ -60,25 +60,27 @@
   </section>
 
   <section class="relative">
-    <h2><a href="/academia" class="text-primary-500 hover:text-primary-700">Academia</a></h2>
+    <h2><a class="text-sky-600 hover:underline" href="/academia">Academia</a></h2>
 
-    <h3><a href="/academia/papers" class="text-primary-500 hover:text-primary-700">Papers</a></h3>
+    <h3><a class="text-sky-600 hover:underline" href="/academia/papers">Papers</a></h3>
 
-    {{ range $papers.Pages | first 3 }}
-      {{ partial "list-paper.html" . }}
-    {{ end }}
+    <div>
+      {{ range $index, $paper := $papers.Pages | first 3 }}
+        <span class="flex gap-1 mb-2">[{{ add $index 1 }}]{{ partial "list-paper.html" . }}</span>
+      {{ end }}
+    </div>
 
     {{- if gt (len $papers.Pages) 3 -}}
       <div class="text-center">
-        <a class="text-primary-500 hover:text-primary-700" href="{{ $tutorials.RelPermalink }}">View More</a>
+        <a class="text-sky-600 hover:underline" href="{{ $papers.RelPermalink }}">View More</a>
       </div>
     {{- end -}}
 
-    <h3><a href="/academia/presentations" class="text-primary-500 hover:text-primary-700">Presentations</a></h3>
+    <h3><a class="text-sky-600 hover:underline" href="/academia/presentations">Presentations</a></h3>
 
-    <h3><a href="/academia/talks" class="text-primary-500 hover:text-primary-700">Talks</a></h3>
+    <h3><a class="text-sky-600 hover:underline" href="/academia/talks">Talks</a></h3>
 
-    <h3><a href="/academia/notes" class="text-primary-500 hover:text-primary-700">Notes</a></h3>
+    <h3><a class="text-sky-600 hover:underline" href="/academia/notes">Notes</a></h3>
 
     {{ partial "line.html" . }}
   </section>

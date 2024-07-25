@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{- $showTitle := .Params.showTitle -}}
-{{ $paginator := .Paginate (where .Data.Pages "Type" "tutorials") }}
+{{ $paginator := .Paginate (where .Data.Pages "Type" "papers") }}
 
 <div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
   {{- if eq $showTitle true -}}
@@ -9,13 +9,13 @@
   {{- end -}}
 
   {{ with .Paginator }}
-    {{ range .Pages }}
-      {{ partial "list-post.html" . }}
+    {{ range $index, $component := .Pages }}
+      <span class="flex gap-1 mb-2">[{{ add $index 1 }}]{{ partial "list-paper.html" . }}</span>
     {{ end }}
   {{ end }}
 
-  <div class="text-center">
-    {{ if gt (len $paginator.Pages) 1 }}
+  <div class="flex justify-center">
+    {{ if gt $paginator.TotalPages 1 }}
       {{ partial "pagination.html" . }}
     {{ end }}
   </div>
