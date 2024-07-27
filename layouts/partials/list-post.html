@@ -22,18 +22,18 @@
       <h3 class="mb-[0.2em] mr-0 mt-0 ml-0 font-[600] leading-7">{{ .Title }}</h3>
       <p class="m-0">{{ .Summary }}</p>
     </a>
-    <div class="flex flex-1 justify-stretch">
-      <div>
+    <div class="flex justify-between">
+      <div class="flex space-x-4">
         {{ range $index, $category := $categories }}
-          <a class="block hover:underline" href="/category/{{ $category }}">
-            {{ partial "tag-icon.html" . }} {{ $category }}
+          <a class="flex items-center hover:underline" href="/category/{{ $category }}">
+            {{ partial "tag-icon.html" $category }} {{ $category }}
           </a>
         {{ end }}
       </div>
-      <div>
+      <div class="flex space-x-4">
         {{ range $index, $tag := $tags }}
-          <a class="block hover:underline" href="/tags/{{ $tag }}">
-            {{ partial "tag-icon.html" . }} {{ $tag }}
+          <a class="flex items-center hover:underline" href="/tags/{{ $tag }}">
+            {{ partial "tag-icon.html" $tag }} {{ $tag }}
           </a>
         {{ end }}
       </div>
