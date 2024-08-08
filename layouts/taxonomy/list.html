@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="prose-singularisart dark:prose-invert px-4 py-4 md:py-3 md:px-8 max-w-[1000px] mx-auto min-h-[100vh] flex flex-col">
+  <h1 class="text-center">{{ .Section | title }}</h1>
+  <h2 class="text-center">{{ .Title }}</h2>
+
+  {{ range .Pages }}
+    {{ partial "list-post.html" . }}
+  {{ end }}
+</div>
+
+{{ end }}

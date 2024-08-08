@@ -1,0 +1,7 @@
+{{ $type := .type }}
+{{ $taxonomy := .taxonomy }}
+{{ $url := printf "/%s/%s" $type $taxonomy | urlize }}
+
+<a class="flex items-center hover:underline" href="{{ $url }}">
+  {{ partial "tag-icon.html" $taxonomy }}&nbsp;{{ $taxonomy }}
+</a>

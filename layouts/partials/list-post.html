@@ -25,16 +25,12 @@
     <div class="flex justify-between">
       <div class="flex space-x-4">
         {{ range $index, $category := $categories }}
-          <a class="flex items-center hover:underline" href="/category/{{ $category }}">
-            {{ partial "tag-icon.html" $category }} {{ $category }}
-          </a>
+          {{ partial "taxonomy.html" (dict "type" "categories" "taxonomy" $category) }}
         {{ end }}
       </div>
       <div class="flex space-x-4">
         {{ range $index, $tag := $tags }}
-          <a class="flex items-center hover:underline" href="/tags/{{ $tag }}">
-            {{ partial "tag-icon.html" $tag }} {{ $tag }}
-          </a>
+          {{ partial "taxonomy.html" (dict "type" "tags" "taxonomy" $tag) }}
         {{ end }}
       </div>
     </div>
